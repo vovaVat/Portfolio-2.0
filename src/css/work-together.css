@@ -20,14 +20,20 @@
 .together__contacts-text {
   color: var(--color-black);
   margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
-.together__contacts-list li {
+.together__contacts-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
   margin-bottom: 16px;
 }
 
 .together__contacts-list a,
-.together__contacts-list li:last-child {
+.list-item:last-child {
   transition: all 0.3s;
   color: var(--color-black);
   padding-left: 40px;
@@ -73,6 +79,7 @@
 
 .together__form button {
   font-family: inherit;
+  font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--color-white);
@@ -85,4 +92,99 @@
 
 .together__form button:hover {
   background-color: var(--color-hover-green);
+}
+
+@media screen and (min-width: 768px) {
+  .together .container {
+    position: relative;
+  }
+
+  .together .container:after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decor/decor-3.png");
+    top: -125px;
+    right: 0px;
+    width: 360.55px;
+    height: 282.5px;
+    z-index: -1;
+  }
+
+  .together__contacts {
+    margin-bottom: 60px;
+  }
+
+  .together__contacts-text {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 490px;
+  }
+
+  .together__contacts-list {
+    flex-direction: row;
+  }
+
+  .list-item {
+    margin-bottom: 0;
+  }
+
+  .list-item + .list-item {
+    margin-left: 16px;
+  }
+
+  .together__form button {
+    width: 173px;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .together .container:after {
+    background-size: contain;
+    width: 480.59px;
+    height: 380.44px;
+    top: -90px;
+    right: 30px;
+  }
+  .together__title {
+    max-width: 510px;
+    margin-bottom: 80px;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .together__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
+  .together__contacts-list {
+    flex-direction: column;
+  }
+
+  .list-item {
+    margin-bottom: 16px;
+  }
+
+  .list-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .list-item + .list-item {
+    margin-left: 0;
+  }
+  .together__form {
+    max-width: 590px;
+    width: 100%;
+  }
+
+  .together__form textarea {
+    height: 96px;
+  }
 }
