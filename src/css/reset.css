@@ -4,6 +4,7 @@
   --color-white: #f0f0f0;
   --color-light-grey: #e4e5e6;
   --color-light-accent: #bcdfd1;
+  --color-dark-accent: #204136;
   --color-hover-green: #009156;
   --color-error: #e74a3b;
   --color-hover-grey: #bbbbbb;
@@ -16,6 +17,12 @@ body {
   background-color: var(--color-white);
   margin: 0;
 }
+
+.dark-theme {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
 p,
 h1,
 h2,
