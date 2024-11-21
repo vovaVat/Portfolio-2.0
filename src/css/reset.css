@@ -1,3 +1,11 @@
+@font-face {
+  font-display:swap ;
+  font-weight: 400;
+  font-family: "Impact";
+  src: url("../fonts/impact.ttf")
+  format("ttf");
+}
+
 :root {
   --color-black: #292929;
   --color-accent-green: #00b068;
@@ -31,14 +39,14 @@ h3 {
 }
 
 h1{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "Impact";
   font-size: 64px;
   line-height: 80px;
   letter-spacing: 1.8px;
 }
 
 h2{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "Impact";
   font-size: 52px;
   letter-spacing: 1.8px;
   line-height: 64px;
