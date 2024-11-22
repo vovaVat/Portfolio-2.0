@@ -43,9 +43,7 @@ const onSubmit = async event => {
     };
 
     const response = await axios.post(BASE_URL, body);
-    console.log(response.data.title);
-    const { title, message } = response.data;
-    console.log(title, message);
+
     showModal(response.data);
   } catch (error) {
     iziToast.error({

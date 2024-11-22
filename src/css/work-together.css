@@ -38,19 +38,32 @@
 
 .together__contacts-list a,
 .list-item:last-child {
+  position: relative;
   transition: all 0.3s;
   color: var(--color-black);
   padding-left: 40px;
   margin-bottom: 0;
 }
 
-.together__contacts-list a:before {
+.together__contacts-list a::before,
+.list-item:last-child::before {
   content: "";
   position: absolute;
   left: 0;
-  background-image: url("#icon-telephone");
   width: 24px;
   height: 24px;
+}
+
+.list-item:first-child a::before {
+  background-image: url("../img/iconss.svg#icon-tel");
+}
+
+.list-item:nth-child(2) a::before {
+  background-image: url("../img/iconss.svg#icon-email");
+}
+
+.list-item:last-child::before {
+  background-image: url("../img/iconss.svg#icon-map");
 }
 
 .together__contacts-list a:hover {
