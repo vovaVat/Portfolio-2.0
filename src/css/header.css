@@ -45,6 +45,10 @@ button {
     display: none;
   }
 
+  .mob-menu {
+    display: none;
+  }
+
   .hed-container {
     padding: 32px;
     display: grid;
@@ -85,13 +89,13 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
 
 .mob-menu-container {
-  position: relative;
   padding-top: 16px;
   height: 100%;
 }
@@ -101,11 +105,13 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 16px 16px 16px 20px;
+  width: 100%;
 }
 
 .mob-menu-close {
   padding: 0;
 }
+
 .mob-menu-icon {
   stroke-width: 2px;
   stroke: #292929;
@@ -140,11 +146,11 @@ button {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hidden {
-  opacity: 0;
-}
-
-.hidde. {
+  display: none;
 }
