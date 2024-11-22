@@ -1,6 +1,6 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-import iconsUrl from '../img/iconss.svg';
+import iconsUrl from '../img/icons.svg';
 
 const FAQ_ITEMS = [
   {
