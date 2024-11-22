@@ -83,11 +83,15 @@ const showModal = ({ title, message }) => {
 
   modal.classList.add('show');
   backdrop.classList.add('visible');
+
+  document.body.style.overflow = 'hidden';
 };
 
 const closeModal = () => {
   modal.classList.remove('show');
   backdrop.classList.remove('visible');
+
+  document.body.style.overflow = '';
 };
 
 form.addEventListener('submit', onSubmit);

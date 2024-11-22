@@ -95,6 +95,7 @@ input.valid {
   height: 128px;
   max-width: 100%;
   padding: 16px;
+  resize: none;
 }
 
 .together__form button {
@@ -157,10 +158,10 @@ input.valid {
 .backdrop {
   background-color: var(--color-black);
   opacity: 0;
-  position: absolute;
+  position: fixed;
   visibility: hidden;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   transition: all 0.4s;
@@ -253,7 +254,7 @@ input.valid {
 
   .modal {
     padding: 64px;
-    max-width: 364px;
+    max-width: 492px;
   }
 }
 
@@ -301,9 +302,5 @@ input.valid {
   .together__form {
     max-width: 590px;
     width: 100%;
-  }
-
-  .together__form textarea {
-    height: 96px;
   }
 }
