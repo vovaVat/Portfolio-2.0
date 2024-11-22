@@ -38,32 +38,18 @@
 
 .together__contacts-list a,
 .list-item:last-child {
-  position: relative;
+  display: flex;
+  align-items: center;
   transition: all 0.3s;
   color: var(--color-black);
-  padding-left: 40px;
   margin-bottom: 0;
 }
 
-.together__contacts-list a::before,
-.list-item:last-child::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 24px;
-  height: 24px;
-}
-
-.list-item:first-child a::before {
-  background-image: url("../img/iconss.svg#icon-tel");
-}
-
-.list-item:nth-child(2) a::before {
-  background-image: url("../img/iconss.svg#icon-email");
-}
-
-.list-item:last-child::before {
-  background-image: url("../img/iconss.svg#icon-map");
+.icons {
+  fill: transparent;
+  stroke-width: 2px;
+  stroke: var(--color-accent-green);
+  margin-right: 16px;
 }
 
 .together__contacts-list a:hover {
@@ -100,8 +86,17 @@
   color: var(--color-error);
 }
 
-input.valid {
-  border-right: 20px solid green;
+.icon-success-filled {
+  fill: var(--color-accent-green);
+  stroke-width: 0px;
+  position: absolute;
+  right: 16px;
+  top: 17px;
+  visibility: hidden;
+}
+
+.icon-success-filled.valid {
+  visibility: visible;
 }
 
 .together__form textarea {

@@ -9,6 +9,7 @@ const errorMessage = document.querySelector('.error-message');
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
 const backdrop = document.querySelector('.backdrop');
+const iconSuccess = form.querySelector('.icon-success-filled');
 
 const BASE_URL = 'https://portfolio-js.b.goit.study/api/requests';
 
@@ -56,16 +57,16 @@ const onSubmit = async event => {
   }
 
   form.reset();
-  emailField.classList.remove('valid');
+  iconSuccess.classList.remove('valid');
 };
 
 const validateEmail = () => {
   if (emailField.validity.valid) {
-    emailField.classList.add('valid');
+    iconSuccess.classList.add('valid');
     errorMessage.style.display = 'none';
     return true;
   } else {
-    emailField.classList.remove('valid');
+    iconSuccess.classList.remove('valid');
     errorMessage.style.display = 'block';
     errorMessage.textContent = 'Invalid email, try again';
     return;
