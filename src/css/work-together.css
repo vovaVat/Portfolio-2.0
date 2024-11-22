@@ -57,6 +57,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+  position: relative;
 }
 
 .together__form input,
@@ -72,8 +73,23 @@
   border-radius: 8px;
 }
 
+.error-message {
+  display: none;
+  position: absolute;
+  top: 50px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  color: var(--color-error);
+}
+
+input.valid {
+  border-right: 20px solid green;
+}
+
 .together__form textarea {
   height: 128px;
+  max-width: 100%;
   padding: 16px;
 }
 
