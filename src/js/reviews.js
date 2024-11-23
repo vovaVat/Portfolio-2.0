@@ -21,7 +21,7 @@ let swiper = new Swiper('.reviewsSwiper', {
   },
 });
 
-const processReviews = async (reviews) => {
+const processReviews = (reviews) => {
   return reviews.map(review => {
     return `
       <div class="swiper-slide">
@@ -45,13 +45,15 @@ const processReviews = async (reviews) => {
 async function fetchSlides() {
   const response = await axios.get(`https://portfolio-js.b.goit.study/api/reviews`);
 
-  return  await processReviews(response.data);
+  return processReviews(response.data);
 }
 
-try {
-  const data = await fetchSlides();
-  slider.insertAdjacentHTML('beforeend', data.join(''));
-  swiper.update();
-} catch (error) {
-  console.log('error');
-}
+(async () => {
+  try {
+    const data = await fetchSlides();
+    slider.insertAdjacentHTML('beforeend', data.join(''));
+    swiper.update();
+  } catch (error) {
+    console.error('Error fetching slides:', error);
+  }
+})();
