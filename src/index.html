@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,24 +7,32 @@
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-    <load src="./partials/modal.html" />
+    <load src="./partials/header.html" icons-path="./img/icons.svg" />
+    <load src="./partials/modal.html" icons-path="./img/icons.svg" />
     <main>
       <load src="./partials/hero.html" />
       <load src="./partials/about-me.html" />
       <load src="./partials/tech-skils.html" />
       <load src="./partials/my-projects.html" />
-      <load src="./partials/benefits.html" />
-      <load src="./partials/faq.html" />
+      <load src="./partials/benefits.html" icons-path="./img/icons.svg" />
+      <load src="./partials/faq.html" icons-path="./img/icons.svg" />
       <load src="./partials/reviews.html" />
-      <load src="./partials/work-together.html" />
+      <load src="./partials/work-together.html" icons-path="./img/icons.svg" />
     </main>
 
     <load src="./partials/footer.html" />
@@ -33,7 +41,8 @@
     <script type="module" src="./js/faq.js"></script>
     <script type="module" src="./js/my-projects.js"></script>
     <script type="module" src="./js/reviews.js"></script>
-    <script type="module" src="./js/tech-skils.js"></script>
+    <script type="module" src="./js/animations.js"></script>
     <script type="module" src="./js/work-together.js"></script>
+    <script src="./js/animation.js" type="module"></script>
   </body>
 </html>
