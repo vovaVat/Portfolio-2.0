@@ -1,0 +1,136 @@
+.review-content {
+  padding: 0px 32px;
+  width: 1280px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-title {
+  font-family: Impact;
+  font-size: 108px;
+  letter-spacing: 1.8px;
+  line-height: 124px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+h3 {
+  font-family: Poppins Medium;
+  font-size: 36px;
+  letter-spacing: 0.5px;
+  line-height: 48px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-swiper-button-next,
+.custom-swiper-button-prev {
+  position: absolute;
+  bottom: -40px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-swiper-button-next {
+  right: 50%;
+  margin-right: -25px;
+}
+
+.custom-swiper-button-prev {
+  left: 50%;
+  margin-left: -25px;
+}
+
+.custom-swiper-button-next svg,
+.custom-swiper-button-prev svg {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-swiper-button-next {
+  margin-left: 5px;
+}
+
+.custom-swiper-button-prev {
+  margin-right: 5px;
+}
+
+.swiper-slide {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 32px;
+  width: 592px;
+  height: 224px;
+  background: var(--color-light-grey);
+}
+
+.review-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+}
+
+.review-person {
+  width: 592px;
+  height: 40px;
+  align-self: flex-end;
+}
+
+.review-person-featured-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.review-person-featured-icon-img {
+  border-radius: 24px;
+  width: 40px;
+  height: 40px;
+}
+
+.review-person-featured-icon-circle {
+  border-radius: 100%;
+  fill: var(--color-light-accent);
+}
+
+.review-person-text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  color: var(--color-black);
+}
