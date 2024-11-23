@@ -21,8 +21,10 @@ import{A as C,i as l,a as M}from"./assets/vendor-Bwt5MwBX.js";(function(){const 
     <li class="projects-list-card">
                 <img src="${n}" alt="${o}" width="320" class="my-project-picture">
                 <div class="discription-container">
-                    <p class="skills-text">${s}</p>
-                    <h3 class="project-title">${o}</h3>
+                    <div class="wrapper">
+                        <p class="skills-text">${s}</p>
+                        <h3 class="project-title">${o}</h3>
+                    </div>
                     <a href="${t}" class="my-projects-link">VISIT</a>
                 </div>
 

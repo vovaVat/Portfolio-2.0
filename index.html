@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/Portfolio-2.0/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio-2.0/assets/vendor-Bwt5MwBX.js">
     <link rel="stylesheet" crossorigin href="/Portfolio-2.0/assets/vendor-DLkfUfUw.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio-2.0/assets/index-cz7VXCZk.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio-2.0/assets/index-iVhzsUjJ.css">
   </head>
   <body>
     <header class="page-header">
@@ -33,13 +33,13 @@
       </h2>
       <ul class="hed-list">
         <li class="hed-list-item">
-          <a class="nav-link" href="#about-me">About me</a>
+          <a class="nav-link hover" href="#about-me">About me</a>
         </li>
         <li class="hed-list-item">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link hover" href="#projects">Projects</a>
         </li>
         <li class="hed-list-item">
-          <a class="nav-link" href="#contacts">Contacts</a>
+          <a class="nav-link hover" href="#contacts">Contacts</a>
         </li>
       </ul>
     </nav>
@@ -86,35 +86,62 @@
     <main>
       
       
-      <section class="container container-tech">
-
-     <h2 class="title-techskills">Tech-Skills</h2>  
+      <section class="section tech">
+  <div class="container container-tech">
+    <h2 class="title-techskills">Tech-Skills</h2>
 
     <div class="marquee-left marquee">
       <div class="marquee__inner">
-        
-        <p class="marquee__line marquee__line-left"><span class="dot dot-one">HTML/CSS</span><span class="dot dot-one">JavaScript</span><span class="dot dot-one">React</span><span class="dot dot-one"> Node.js</span><span class="dot dot-one">React Native</span><span class="dot dot-one">Typescript</span></p>
-        <p class="marquee__line marquee__line-left"><span class="dot dot-one">HTML/CSS</span><span class="dot dot-one">JavaScript</span><span class="dot dot-one">React</span><span class="dot dot-one"> Node.js</span><span class="dot dot-one">React Native</span><span class="dot dot-one">Typescript</span></p>
-  
-      </div>
-    </div>
-    
-    <div class="marquee-right marquee">
-      <div class="marquee__inner">
-        
-        <p class="marquee__line marquee__line-right"><span class="dot dot-two">HTML/CSS</span><span class="dot dot dot-two">JavaScript</span><span class="dot dot dot-two">React</span><span class="dot dot dot-two"> Node.js</span><span class="dot dot dot-two">React Native</span><span class="dot dot dot-two">Typescript</span></p>
-        <p class="marquee__line marquee__line-right"><span class="dot dot-two">HTML/CSS</span><span class="dot dot dot-two">JavaScript</span><span class="dot dot dot-two">React</span><span class="dot dot dot-two"> Node.js</span><span class="dot dot dot-two">React Native</span><span class="dot dot dot-two">Typescript</span></p>
-        
+        <p class="marquee__line marquee__line-left">
+          <span class="dot dot-one">HTML/CSS</span
+          ><span class="dot dot-one">JavaScript</span
+          ><span class="dot dot-one">React</span
+          ><span class="dot dot-one"> Node.js</span
+          ><span class="dot dot-one">React Native</span
+          ><span class="dot dot-one">Typescript</span>
+        </p>
+        <p class="marquee__line marquee__line-left">
+          <span class="dot dot-one">HTML/CSS</span
+          ><span class="dot dot-one">JavaScript</span
+          ><span class="dot dot-one">React</span
+          ><span class="dot dot-one"> Node.js</span
+          ><span class="dot dot-one">React Native</span
+          ><span class="dot dot-one">Typescript</span>
+        </p>
       </div>
     </div>
 
-      <section id="projects">
-    <div class="container my-projects-container">
-        <h2 class="my-projects-title">my <span class="my-project-title-span">projects</span>
-        </h2>
-        <ul class="projects-list"></ul>
-        <button type="button" class="load-more-btn">LOAD MORE</button>
+    <div class="marquee-right marquee">
+      <div class="marquee__inner">
+        <p class="marquee__line marquee__line-right">
+          <span class="dot dot-two">HTML/CSS</span
+          ><span class="dot dot dot-two">JavaScript</span
+          ><span class="dot dot dot-two">React</span
+          ><span class="dot dot dot-two"> Node.js</span
+          ><span class="dot dot dot-two">React Native</span
+          ><span class="dot dot dot-two">Typescript</span>
+        </p>
+        <p class="marquee__line marquee__line-right">
+          <span class="dot dot-two">HTML/CSS</span
+          ><span class="dot dot dot-two">JavaScript</span
+          ><span class="dot dot dot-two">React</span
+          ><span class="dot dot dot-two"> Node.js</span
+          ><span class="dot dot dot-two">React Native</span
+          ><span class="dot dot dot-two">Typescript</span>
+        </p>
+      </div>
     </div>
+  </div>
+</section>
+
+      <section id="projects" class="section">
+  <div class="container my-projects-container">
+    <h2 class="my-projects-title">
+      my <span class="my-project-title-span">projects</span>
+    </h2>
+    <ul class="projects-list"></ul>
+    <button type="button" class="load-more-btn">LOAD MORE</button>
+  </div>
 </section>
 
       <section class="section benefits-section">
@@ -219,7 +246,7 @@
         </p>
         <ul class="together__contacts-list">
           <li class="list-item">
-            <a href="tel:+380904567890">
+            <a class="hover" href="tel:+380904567890">
               <svg class="icons icon-tel" width="24" height="24">
                 <use href="/Portfolio-2.0/assets/icons-BAR8BoIC.svg#icon-tel"></use>
               </svg>
@@ -227,7 +254,7 @@
             >
           </li>
           <li class="list-item">
-            <a href="mailto:lloydjefferson@gmail.com">
+            <a class="hover" href="mailto:lloydjefferson@gmail.com">
               <svg class="icons icon-email" width="24" height="24">
                 <use href="/Portfolio-2.0/assets/icons-BAR8BoIC.svg#icon-email"></use>
               </svg>
@@ -277,7 +304,7 @@
       <ul class="footer-list">
         <li>
           <a
-            class="link"
+            class="link hover"
             href="https://www.instagram.com/goitclub/"
             target="_blank"
             >Instagram</a
@@ -285,7 +312,7 @@
         </li>
         <li>
           <a
-            class="link"
+            class="link hover"
             href="https://www.facebook.com/goITclub/  "
             target="_blank"
             >Facebook</a
@@ -293,7 +320,7 @@
         </li>
         <li>
           <a
-            class="link"
+            class="link hover"
             href="https://www.linkedin.com/school/goit-start-your-career-in-it "
             target="_blank"
             >Linkedin</a
@@ -301,7 +328,7 @@
         </li>
         <li>
           <a
-            class="link"
+            class="link hover"
             href="https://github.com/vovaVat/Portfolio-2.0/tree/main"
             target="_blank"
             >GitHub</a
