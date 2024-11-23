@@ -225,11 +225,12 @@
   .together .container:after {
     content: "";
     position: absolute;
-    background-image: url("../img/decor/decor-3.png");
-    top: -125px;
-    right: 0px;
-    width: 360.55px;
-    height: 282.5px;
+    background-image: url("../img/decor/decor-2.png");
+    background-size: cover;
+    top: -118px;
+    right: 33px;
+    width: 336px;
+    height: 260px;
     z-index: -1;
   }
 
@@ -268,11 +269,12 @@
 
 @media screen and (min-width: 1158px) {
   .together .container:after {
+    background-image: url("../img/decor/decor-5.png");
     background-size: contain;
-    width: 480.59px;
-    height: 380.44px;
-    top: -90px;
-    right: 30px;
+    width: 526px;
+    height: 408px;
+    top: -116px;
+    right: 21px;
   }
   .together__title {
     max-width: 510px;
