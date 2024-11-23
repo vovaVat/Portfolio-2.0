@@ -12,7 +12,7 @@
   color: var(--color-accent-green);
 }
 
-.wrapper {
+.together .wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -50,10 +50,6 @@
   stroke-width: 2px;
   stroke: var(--color-accent-green);
   margin-right: 16px;
-}
-
-.together__contacts-list a:hover {
-  color: var(--color-hover-green);
 }
 
 .together__form {
@@ -281,7 +277,7 @@
     margin-bottom: 80px;
   }
 
-  .wrapper {
+  .together .wrapper {
     flex-direction: row;
     justify-content: space-between;
   }
