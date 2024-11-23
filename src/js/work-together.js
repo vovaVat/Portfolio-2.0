@@ -24,16 +24,26 @@ iziToast.settings({
   displayMode: 1,
 });
 
+const iziToastOptions = {
+  warning: {
+    message: 'Invalid email or empty message field. Please, try again.',
+    backgroundColor: '#ffd7a3',
+    theme: 'light',
+    messageColor: '#292929',
+  },
+  error: {
+    message: 'An error occurred while sending your message. Please try again.',
+    backgroundColor: 'rgb(239, 64, 64)',
+    theme: 'dark',
+    messageColor: '#fff',
+  },
+};
+
 const onSubmit = async event => {
   event.preventDefault();
 
   if (!validateEmail() || messageField.value.trim() === '') {
-    iziToast.warning({
-      message: 'Invalid email or empty message field. Please, try again.',
-      backgroundColor: '#ffd7a3',
-      theme: 'light',
-      messageColor: '#292929',
-    });
+    iziToast.warning(iziToastOptions.warning);
     return;
   }
 
@@ -47,13 +57,7 @@ const onSubmit = async event => {
 
     showModal(response.data);
   } catch (error) {
-    iziToast.error({
-      message:
-        'An error occurred while sending your message. Please try again.',
-      backgroundColor: 'rgb(239, 64, 64)',
-      theme: 'dark',
-      messageColor: '#fff',
-    });
+    iziToast.error(iziToastOptions.error);
   }
 
   form.reset();
@@ -73,24 +77,21 @@ const validateEmail = () => {
   }
 };
 
+const toggleModal = isVisible => {
+  modal.classList.toggle('show', isVisible);
+  backdrop.classList.toggle('visible', isVisible);
+  document.body.style.overflow = isVisible ? 'hidden' : '';
+};
+
 const showModal = ({ title, message }) => {
-  const modalTitle = document.querySelector('.modal__title');
-  const modalText = document.querySelector('.modal__text');
+  modal.querySelector('.modal__title').textContent = title;
+  modal.querySelector('.modal__text').textContent = message;
 
-  modalTitle.textContent = `${title}`;
-  modalText.textContent = `${message}`;
-
-  modal.classList.add('show');
-  backdrop.classList.add('visible');
-
-  document.body.style.overflow = 'hidden';
+  toggleModal(true);
 };
 
 const closeModal = () => {
-  modal.classList.remove('show');
-  backdrop.classList.remove('visible');
-
-  document.body.style.overflow = '';
+  toggleModal(false);
 };
 
 form.addEventListener('submit', onSubmit);

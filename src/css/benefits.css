@@ -70,9 +70,9 @@
 /* ----Benefits 768---- */
 
 @media screen and (min-width: 768px) {
-  .section {
+  /* .section {
     padding: 62px 0;
-  }
+  } */
   .benefits-title {
     font-size: 108px;
     line-height: 1.15;
