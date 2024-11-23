@@ -12,7 +12,7 @@
   color: var(--color-accent-green);
 }
 
-.wrapper {
+.together .wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -50,10 +50,6 @@
   stroke-width: 2px;
   stroke: var(--color-accent-green);
   margin-right: 16px;
-}
-
-.together__contacts-list a:hover {
-  color: var(--color-hover-green);
 }
 
 .together__form {
@@ -116,7 +112,7 @@
   border: none;
   border-radius: 8px;
   background-color: var(--color-accent-green);
-  transition: all 0.3s;
+  transition: background-color 0.3s;
 }
 
 .together__form button:hover {
@@ -134,14 +130,14 @@
   border-radius: 16px;
   padding: 48px 32px;
   transition: all 0.5s;
-  max-width: 256px;
+  max-width: 320px;
   width: 100%;
 }
 
 .modal.show {
   opacity: 1;
   z-index: 2;
-  visibility: unset;
+  visibility: visible;
 }
 
 .modal__title {
@@ -225,11 +221,12 @@
   .together .container:after {
     content: "";
     position: absolute;
-    background-image: url("../img/decor/decor-3.png");
-    top: -125px;
-    right: 0px;
-    width: 360.55px;
-    height: 282.5px;
+    background-image: url("../img/decor/decor-2.png");
+    background-size: cover;
+    top: -118px;
+    right: 33px;
+    width: 336px;
+    height: 260px;
     z-index: -1;
   }
 
@@ -268,18 +265,19 @@
 
 @media screen and (min-width: 1158px) {
   .together .container:after {
+    background-image: url("../img/decor/decor-5.png");
     background-size: contain;
-    width: 480.59px;
-    height: 380.44px;
-    top: -90px;
-    right: 30px;
+    width: 526px;
+    height: 408px;
+    top: -116px;
+    right: 21px;
   }
   .together__title {
     max-width: 510px;
     margin-bottom: 80px;
   }
 
-  .wrapper {
+  .together .wrapper {
     flex-direction: row;
     justify-content: space-between;
   }

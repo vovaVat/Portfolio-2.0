@@ -70,9 +70,9 @@
 /* ----Benefits 768---- */
 
 @media screen and (min-width: 768px) {
-  .section {
+  /* .section {
     padding: 62px 0;
-  }
+  } */
   .benefits-title {
     font-size: 108px;
     line-height: 1.15;
@@ -115,7 +115,7 @@
 /* ----Benefits 1280---- */
 
 @media screen and (min-width: 1280px) {
-  .section {
+  .benefits-container {
     position: relative;
   }
   .benefits-title-container {
@@ -135,7 +135,7 @@
   }
   .img-decor {
     position: absolute;
-    top: -14px;
+    top: -80px;
     right: 24px;
   }
   .benefits-list-container {

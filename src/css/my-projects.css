@@ -1,0 +1,136 @@
+.my-projects-title {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    max-width: 291px;
+    text-align: center;
+}
+
+.my-project-title-span {
+    color: #00b068;
+}
+
+.my-projects-container {
+    padding: 0;
+}
+
+.my-projects-link {
+    border-radius: 8px;
+    padding: 12px 24px;
+    width: 125px;
+    height: 48px;
+    /* background: #e4e5e6; */
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    align-self: flex-end;
+}
+
+.load-more-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 12px 24px;
+    width: 155px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55556;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    border-style: none;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.load-more-btn::after {
+    content: "";
+    width: 100%;
+}
+
+.my-project-picture {
+    border-radius: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.project-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.discription-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.skills-text {
+    margin-bottom: 16px;
+}
+
+#projects .wrapper {
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .my-projects-container {
+        padding: 0 32px;
+    }
+
+    .my-project-picture {
+        width: 704px;
+        margin-top: 60px;
+    }
+
+    .my-projects-title {
+        max-width: 590px;
+        margin-bottom: 60px;
+        font-size: 108px;
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .project-title {
+        font-size: 36px;
+        line-height: 1.33333;
+        letter-spacing: 0.01em;
+    }
+
+    #projects .wrapper {
+        margin-bottom: 0;
+    }
+
+    .discription-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .my-project-picture {
+        width: 1008px;
+        margin-top: 80px;
+    }
+
+    li.projects-list-card {
+        max-width: 1008px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
