@@ -19,8 +19,13 @@
   "license": "ISC",
   "dependencies": {
     "accordion-js": "^3.3.4",
+    "axios": "^1.7.7",
+    "izitoast": "^1.4.0",
     "vanilla-app-template": "file:",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
   }
 }
