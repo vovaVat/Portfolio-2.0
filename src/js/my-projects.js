@@ -87,11 +87,11 @@ function createMarkup (arr){
 
     `
     <li class="projects-list-card">
-                <img src=${img}" alt=${title}" width="320" class="my-project-picture">
+                <img src="${img}" alt="${title}" width="320" class="my-project-picture">
                 <div class="discription-container">
                     <p class="skills-text">${skills}</p>
                     <h3 class="project-title">${title}</h3>
-                    <a href=${link} class="my-projects-link">VISIT</a>
+                    <a href="${link}" class="my-projects-link">VISIT</a>
                 </div>
 
             </li>
