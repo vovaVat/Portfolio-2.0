@@ -1,0 +1,47 @@
+.my-projects-title{
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    max-width: 291px;
+    text-align: center;
+}
+.my-project-title-span{
+    color: #00b068;
+} 
+.my-projects-link{
+border-radius: 8px;
+padding: 12px 24px;
+width: 125px;
+height: 48px;
+/* background: #e4e5e6; */
+font-weight: 500px;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+color: #292929;
+}
+
+.load-more-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 12px 24px;
+width: 155px;
+height: 52px;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55556;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #292929;
+border-style: none;
+} 
+
+.my-project-picture{
+    border-radius: 16px;
+}
