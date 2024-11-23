@@ -6,9 +6,18 @@ import 'swiper/css/bundle';
 const slider = document.querySelector('.reviewsSwiper .swiper-wrapper');
 
 let swiper = new Swiper('.reviewsSwiper', {
+  spaceBetween: 32,
   navigation: {
-    nextEl: '.custom-swiper-button-next',
-    prevEl: '.custom-swiper-button-prev',
+    nextEl: ".custom-swiper-button-next",
+    prevEl: ".custom-swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+    },
+    1280: {
+      slidesPerView: 2,
+    },
   },
 });
 
@@ -35,14 +44,14 @@ const processReviews = async (reviews) => {
 
 async function fetchSlides() {
   const response = await axios.get(`https://portfolio-js.b.goit.study/api/reviews`);
+
   return  await processReviews(response.data);
 }
 
 try {
-  swiper.slidesPerViewDynamic();
   const data = await fetchSlides();
   slider.insertAdjacentHTML('beforeend', data.join(''));
+  swiper.update();
 } catch (error) {
   console.log('error');
-  slider.insertAdjacentHTML('beforeend', data.join(''));
 }
