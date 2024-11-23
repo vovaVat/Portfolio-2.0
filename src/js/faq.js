@@ -47,10 +47,10 @@ function createAccordionItem(accordionItemData) {
 
           <div class="accordion-trigger-button-icon">
             <svg class="down-icon" width="32" height="32" aria-label="icon-Dropdown icon">
-              <use href="${iconsUrl}#icon-Dropdown"></use>
+              <use href="${iconsUrl}#icon-btn-down"></use>
             </svg>
             <svg class="up-icon" width="32" height="32" aria-label="icon-Dropup icon">
-              <use href="${iconsUrl}#icon-Dropup"></use>
+              <use href="${iconsUrl}#icon-btn-up"></use>
             </svg>
           </div>
         </button>
