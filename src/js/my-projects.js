@@ -1,6 +1,6 @@
 const projects = [
     {
-        img: "../img/Projects/Project1.jpg",
+        img: "./img/Projects/Project1.jpg",
         skills: "React, JavaScript, Node JS, Git",
         title: "starlight studio landing page",
         link: "https://github.com/vovaVat/Portfolio-2.0"
