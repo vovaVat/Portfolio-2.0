@@ -5,7 +5,7 @@ const projects = [
         title: "starlight studio landing page",
         link: "https://github.com/vovaVat/Portfolio-2.0"
     }, {
-        img: "./img/Projects/Project2.jpg",
+        img: "/img/Projects/Project2.jpg",
         skills: "React, JavaScript, Node JS, Git",
         title: "energy flow webservice ",
         link: "https://github.com/vovaVat/Portfolio-2.0"
