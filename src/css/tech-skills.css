@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.title-techskills{
+  display: none;
+}
+
 /* *,
 *::before,
 *::after {
@@ -152,6 +156,7 @@
         transform: translateX(-94%);
       }
     }
+
     
     @keyframes marqueeLineRight {
       from {
