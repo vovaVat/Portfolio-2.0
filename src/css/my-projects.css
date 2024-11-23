@@ -13,7 +13,9 @@
     color: #00b068;
 }
 
-
+.my-projects-container {
+    padding: 0;
+}
 
 .my-projects-link {
     border-radius: 8px;
@@ -26,6 +28,7 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
+    align-self: flex-end;
 }
 
 .load-more-btn {
@@ -48,10 +51,9 @@
     margin-right: 0;
 }
 
-.load-more-btn::after{
-    content:"";
+.load-more-btn::after {
+    content: "";
     width: 100%;
-    
 }
 
 .my-project-picture {
@@ -71,10 +73,25 @@
 }
 
 .discription-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-top: 12px;
 }
 
+.skills-text {
+    margin-bottom: 16px;
+}
+
+#projects .wrapper {
+    margin-bottom: 16px;
+}
+
 @media screen and (min-width: 768px) {
+    .my-projects-container {
+        padding: 0 32px;
+    }
+
     .my-project-picture {
         width: 704px;
         margin-top: 60px;
@@ -93,13 +110,27 @@
     .project-title {
         font-size: 36px;
         line-height: 1.33333;
-        letter-spacing: 0.01em;}
-
+        letter-spacing: 0.01em;
     }
 
-    @media screen and (min-width: 1158px) {
-        .my-project-picture {
-            width: 1008px;
-            margin-top: 80px;
-        }
+    #projects .wrapper {
+        margin-bottom: 0;
     }
+
+    .discription-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .my-project-picture {
+        width: 1008px;
+        margin-top: 80px;
+    }
+
+    li.projects-list-card {
+        max-width: 1008px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
