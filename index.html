@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Portfolio 2.0</title>
 
     <link
       rel="stylesheet"
@@ -22,14 +21,16 @@
     <script type="module" crossorigin src="/Portfolio-2.0/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio-2.0/assets/vendor-C6HZcDrf.js">
     <link rel="stylesheet" crossorigin href="/Portfolio-2.0/assets/vendor-Cvhwh8Pc.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio-2.0/assets/index-DK71tQ51.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio-2.0/assets/index-t7SMxFFR.css">
   </head>
   <body>
     <header class="page-header">
   <div class="container hed-container">
     <nav class="header-nav">
       <h2 class="header-logo">
-        LLOYD<span class="logo-part">JEFFERSON.</span>
+        <a href="./index.html"
+          >LLOYD<span class="logo-part">JEFFERSON.</span></a
+        >
       </h2>
       <ul class="hed-list">
         <li class="hed-list-item">
@@ -43,6 +44,20 @@
         </li>
       </ul>
     </nav>
+
+    <div class="theme-toggle">
+      <input type="checkbox" id="theme-slider" class="slider-checkbox">
+      <label for="theme-slider" class="slider-label">
+        <div class="slider-thumb">
+          <svg class="slider-icon sun" width="40" height="40">
+            <use href="/Portfolio-2.0/assets/icons-BAR8BoIC.svg#icon-topic-light"></use>
+          </svg>
+          <svg class="slider-icon moon" width="40" height="40">
+            <use href="/Portfolio-2.0/assets/icons-BAR8BoIC.svg#icon-topic-dark"></use>
+          </svg>
+        </div>
+      </label>
+    </div>
 
     <button class="menu-btm" type="button">
       <svg class="menu-burger" width="22" height="16">
