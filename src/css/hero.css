@@ -205,4 +205,8 @@
       font-size: 20px;
       line-height: 1.6;
     }
+    .media-link:hover,
+    .media-link:focus{
+      color:#00B068;
+    }
   }
