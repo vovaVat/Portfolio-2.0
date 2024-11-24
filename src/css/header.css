@@ -324,3 +324,20 @@ a {
   stroke: #f0f0f0;
   fill: #1e2023;
 }
+
+.dark .list {
+  color: #f0f0f0;
+}
+
+.dark .media-list {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
+.dark .dot-two::before {
+  background-color: #f0f0f0;
+}
+
+.dark .marquee-right .dot {
+  color: #14c57c;
+}
