@@ -134,7 +134,6 @@ function createMarkup(arr) {
                     </svg>
                   </a>
                 </div>
-
             </li>
     `
     )
