@@ -4,7 +4,7 @@ import imgProject1Path_x2 from '../img/Projects/Project1-2x.jpg';
 import imgProject2Path from '../img/Projects/Project2.jpg';
 import imgProject2Path_x2 from '../img/Projects/Project2-2x.jpg';
 import imgProject3Path from '../img/Projects/Project3.jpg';
-import imgProject3Path_x2 from '../img/Projects/Project3-2x.jpg';
+import imgProject3Path_x2 from '../img/Projects/project3-2x.jpg';
 import imgProject4Path from '../img/Projects/Project4.jpg';
 import imgProject4Path_x2 from '../img/Projects/Project4-2x.jpg';
 import imgProject5Path from '../img/Projects/Project5.jpg';
