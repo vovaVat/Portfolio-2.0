@@ -1,12 +1,25 @@
+import imgProject1Path from '../img/Projects/Project1.jpg';
+import imgProject2Path from '../img/Projects/Project2.jpg';
+import imgProject3Path from '../img/Projects/Project3.jpg';
+import imgProject4Path from '../img/Projects/Project4.jpg';
+import imgProject5Path from '../img/Projects/Project5.jpg';
+import imgProject6Path from '../img/Projects/Project6.jpg';
+import imgProject7Path from '../img/Projects/Project7.jpg';
+import imgProject8Path from '../img/Projects/Project8.jpg';
+import imgProject9Path from '../img/Projects/Project9.jpg';
+import imgProject10Path from '../img/Projects/Project10.jpg';
+
 const projects = [
   {
     img: './img/Projects/Project1.jpg',
+    
     skills: 'React, JavaScript, Node JS, Git',
     title: 'starlight studio landing page',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
     srcset: './img/Projects/Project1.jpg, ./img/Projects/Project1-2x.jpg'
   },
   {
+
     img: './img/Projects/Project2.jpg',
     skills: 'React, JavaScript, Node JS, Git',
     title: 'energy flow webservice ',
@@ -14,6 +27,7 @@ const projects = [
     srcset: './img/Projects/Project2.jpg, ./img/Projects/Project2-2x.jpg'
   },
   {
+
     img: './img/Projects/Project3.jpg',
     skills: 'React, JavaScript, Node JS, Git',
     title: 'fruitbox online store',
@@ -21,6 +35,7 @@ const projects = [
     srcset: './img/Projects/Project3.jpg, ./img/Projects/Project3-2x.jpg'
   },
   {
+
     img: './img/Projects/Project4.jpg',
     skills: 'React, JavaScript, Node JS, Git',
     title: 'chego jewelry website',
@@ -28,6 +43,7 @@ const projects = [
     srcset: './img/Projects/Project4.jpg, ./img/Projects/Project4-2x.jpg'
   },
   {
+
     img: './img/Projects/Project5.jpg',
     skills: 'React, JavaScript, Node JS, Git',
     title: 'mimino website',
@@ -35,6 +51,7 @@ const projects = [
     srcset: './img/Projects/Project5.jpg, ./img/Projects/Project5-2x.jpg'
   },
   {
+
     img: './img/Projects/Project6.jpg',
     skills: 'React, JavaScript, Node JS, Git',
     title: 'vyshyvanka vibes Landing Page',
@@ -42,6 +59,7 @@ const projects = [
     srcset: './img/Projects/Project6.jpg, ./img/Projects/Project6-2x.jpg'
   },
   {
+
     img: './img/Projects/Project7.jpg',
     skills: 'React, JavaScript, Node JS, Git',
     title: 'green harvest online store',
@@ -49,6 +67,7 @@ const projects = [
     srcset: './img/Projects/Project7.jpg, ./img/Projects/Project7-2x.jpg'
   },
   {
+
     img: './img/Projects/Project8.jpg',
     skills: 'React, JavaScript, Node JS, Git',
     title: 'power pulse webservice ',
@@ -56,6 +75,7 @@ const projects = [
     srcset: './img/Projects/Project8.jpg, ./img/Projects/Project8-2x.jpg'
   },
   {
+
     img: './img/Projects/Project9.jpg',
     skills: 'React, JavaScript, Node JS, Git',
     title: 'wallet webservice',

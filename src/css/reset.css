@@ -25,11 +25,6 @@ body {
   margin: 0;
 }
 
-.dark-theme {
-  color: var(--color-white);
-  background-color: var(--color-black);
-}
-
 p,
 h1,
 h2,

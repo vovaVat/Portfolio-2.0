@@ -1,0 +1,214 @@
+.dots-box-bottom {
+  display: none;
+}
+.hero-section {
+  padding-top: 112px;
+}
+  .hero-container {
+    position: relative;
+  }
+  .decor-points {
+    position: absolute;
+    top: -80px;
+    right: -8px;
+    z-index: -1;
+  }
+  .hero-title {
+    font-family: "Impact", sans-serif;
+    font-size: 64px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    max-width: 320px;
+  }
+  .hero-accent {
+    color: var(--color-accent-green);
+  }
+  .hero-image-box {
+    display: none;
+  }
+  .hero-btn-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 320px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .hero-btn {
+    background-color: var(--color-light-accent);
+    min-width: 165px;
+    height: 92px;
+    border: none;
+    border-radius: 16px;
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-btn:hover,
+  .hero-btn:focus {
+    background-color: var(--color-accent-green);
+  }
+  .arrow-text {
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-black);
+    position: absolute;
+    top: 32px;
+    left: 42px;
+  }
+  .arrow-icon {
+    stroke: 2px;
+    fill: var(--color-accent-green);
+  }
+  
+  .hero-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 72px;
+    max-width: 320px;
+  }
+
+  .media-container{
+    background-color: #E4E5E6;
+    padding: 32px 0;
+  }
+
+  .media-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  /*---- Hero 768----*/
+  @media screen and (min-width: 768px) {
+    .dots-box-bottom {
+      display: flex;
+      position: relative;
+    }
+    .hero-title {
+      font-size: 136px;
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+      margin-bottom: 60px;
+      max-width: 704px;
+    }
+    .hero-text {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    .hero-btn-box {
+      margin-bottom: 40px;
+      max-width: 416px;
+      position: relative;
+    }
+    .decor-points {
+      right: 32px;
+    }
+    .decor-points-bottom {
+      position: absolute;
+      top: -36px;
+      right: -126px;
+    }
+    .hero-btn {
+      min-width: 261px;
+      height: 96px;
+    }
+    .arrow-text {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    .hero-text {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 80px;
+      max-width: 704px;
+    }
+
+    .media-container{
+       padding: 40px 0;
+    }
+
+    .media-list{
+      flex-direction: row;
+      gap: 40px;
+      justify-content: center;
+    }
+    
+  }
+  /* ----hero1280---- */
+  @media screen and (min-width: 1280px) {
+    .hero-section {
+      padding: 184px 0 0 0;
+    }
+    .hero-title-box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+    .hero-title {
+      font-size: 136px;
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+      margin-bottom: 80px;
+      max-width: 100%;
+    }
+    .title-box {
+      max-width: 552px;
+    }
+    .hero-image-box {
+      max-width: 592px;
+      display: flex;
+      margin-bottom: 0;
+    }
+    .hero-image {
+      border-radius: 16px;
+      height: 100%;
+      max-height: 444px;
+    }
+    .hero-title {
+      line-height: 1.15;
+      margin-bottom: 80px;
+      max-width: 100%;
+      font-size: 124px;
+      line-height: 1.19;
+      letter-spacing: 0.01em;
+    }
+    .btn-text-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 136px;
+      padding: 80px 0 80px 72px;
+    }
+    .hero-btn-box {
+      width: 100%;
+      max-width: 416px;
+      display: flex;
+      margin-bottom: 0;
+    }
+    .decor-points {
+      z-index: -1;
+    }
+    .decor-points-bottom {
+      position: absolute;
+      top: -104px;
+      right: -88px;
+      z-index: -1;
+    }
+    .arrow-icon {
+      margin-right: 48px;
+    }
+    .hero-text-box {
+      width: 100%;
+      max-width: 592px;
+    }
+    .hero-text {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  }
