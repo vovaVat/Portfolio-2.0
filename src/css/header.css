@@ -159,6 +159,9 @@ a {
   display: none;
 }
 
+
+/*theme*/
+
 .theme-toggle {
   background-color: #222;
   border: none;
@@ -207,3 +210,5 @@ a {
 .dark a {
   color: #f0f0f0;
 }
+
+
