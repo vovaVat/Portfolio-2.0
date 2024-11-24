@@ -73,11 +73,6 @@
     max-width: 320px;
   }
 
-  .media-container{
-    background-color: #E4E5E6;
-    padding: 32px 0;
-  }
-
   .media-list{
     display: flex;
     flex-direction: column;
@@ -128,10 +123,6 @@
       line-height: 1.6;
       margin-bottom: 80px;
       max-width: 704px;
-    }
-
-    .media-container{
-       padding: 40px 0;
     }
 
     .media-list{
