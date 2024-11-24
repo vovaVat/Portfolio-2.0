@@ -91,7 +91,7 @@
   .about-me-section .container::after {
     content: '';
     position: absolute;
-    background-image: url('../img/decor/decor-2.png');
+    background-image: url('../img/decor/decor-02.png');
     background-size: cover;
     right: 0;
     bottom: 156px;
@@ -146,7 +146,7 @@
 
 @media screen and (min-width: 1280px) {
   .about-me-section .container::after {
-    background-image: url('../img/decor/decor-2.png');
+    background-image: url('../img/decor/decor-02.png');
     bottom: 264px;
     width: 384px;
     height: 288px;
