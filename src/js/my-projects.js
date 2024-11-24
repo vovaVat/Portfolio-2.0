@@ -139,4 +139,6 @@ function createMarkup(arr) {
     )
     .join('');
     projectsList.insertAdjacentHTML('beforeend', markup);
-}
+};
+
+
