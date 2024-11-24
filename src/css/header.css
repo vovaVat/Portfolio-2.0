@@ -159,7 +159,6 @@ a {
   display: none;
 }
 
-
 /*theme*/
 
 .theme-toggle {
@@ -207,8 +206,77 @@ a {
 .dark h1,
 .dark h2,
 .dark h3,
-.dark a {
+.dark a,
+.dark p {
   color: #f0f0f0;
 }
 
+.dark .media-container {
+  background-color: #2a2d32;
+}
 
+.dark .hero-btn {
+  background-color: #00b068;
+}
+
+.dark .marquee-left {
+  background-color: #204136;
+}
+
+.dark .marquee-right {
+  background-color: #2a2d32;
+}
+
+.dark .my-projects-link {
+  background-color: #2a2d32;
+}
+
+.dark .load-more-btn {
+  color: #f0f0f0;
+  background-color: #1e2023;
+}
+
+.dark .icon-box {
+  background-color: #204136;
+}
+
+.dark .accordion-header-title,
+.dark .accordion-content {
+  color: #f0f0f0;
+}
+
+.dark .accordion-item.is-open {
+  background-color: #204136;
+}
+
+.dark .review {
+  background-color: #2a2d32;
+}
+
+.dark .together__contacts-list a,
+.dark .list-item:last-child {
+  color: #f0f0f0;
+}
+
+.dark .together__form input,
+.dark .together__form textarea {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
+.dark .modal {
+  background-color: #2a2d32;
+}
+
+.dark .modal__title {
+  color: #14c57c;
+}
+
+.dark .modal__text {
+  color: #f0f0f0;
+}
+
+.dark .modal__close::after,
+.dark .modal__close::before {
+  background-color: #f0f0f0;
+}
