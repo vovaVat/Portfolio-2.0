@@ -22,13 +22,17 @@
     padding: 12px 24px;
     width: 125px;
     height: 48px;
-    /* background: #e4e5e6; */
+    background: #e4e5e6;
     font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
     align-self: flex-end;
+}
+
+.my-projects-link:hover {
+    background: #bbb;
 }
 
 .load-more-btn {
@@ -48,12 +52,24 @@
     color: #292929;
     border-style: none;
     margin-bottom: 0;
-    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.load-more-btn:hover {
+    color: #00b068;
 }
 
 .load-more-btn::after {
     content: "";
+    border-radius: 18px;
     width: 100%;
+    height: 2px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #00B068;
 }
 
 .my-project-picture {
@@ -82,6 +98,22 @@
 .skills-text {
     margin-bottom: 16px;
 }
+
+.icon-Line-below {
+    display: inline-block;
+    width: 15px;
+    height: 3px;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  .icon-Vector-above-right-24 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: currentColor;
+    margin-left: 12px;
+  }
 
 #projects .wrapper {
     margin-bottom: 16px;
