@@ -1,0 +1,175 @@
+.about-me-header {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 40px;
+}
+
+.span-me {
+  color: #00b068;
+}
+
+.picture-container {
+  margin-bottom: 40px;
+}
+
+.bio-container {
+  margin-bottom: 40px;
+}
+
+.bio-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.bio-text {
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin-bottom: 24px;
+}
+
+.education-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.main-item {
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+}
+.main-item::before {
+  content: '';
+  position: absolute;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  top: 10px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #00b068;
+  transform: rotate(-180deg);
+}
+
+.role-container {
+  margin-bottom: 80px;
+}
+
+.role-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.role-list {
+  margin-left: 6px;
+}
+
+.role-item {
+  padding-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .about-me-section .container {
+    position: relative;
+  }
+  .about-me-section .container::after {
+    content: '';
+    position: absolute;
+    background-image: url('../img/decor/decor-2.png');
+    background-size: cover;
+    right: 0;
+    bottom: 156px;
+    width: 336px;
+    height: 252px;
+    z-index: -1;
+  }
+  .about-me-header {
+    font-size: 52px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .picture-container {
+    padding-top: 368px;
+    margin-bottom: 0;
+  }
+
+  .about-me-img {
+    width: 336px;
+    height: 392px;
+  }
+  .bio-container {
+    width: 336px;
+    height: 760px;
+    margin-bottom: 0;
+  }
+  .about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 32px;
+  }
+  .text-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-top: 20px;
+    width: 704px;
+    height: 280px;
+  }
+  .education-container {
+    width: 336px;
+    height: 680px;
+  }
+  .role-container {
+    width: 336px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-me-section .container::after {
+    background-image: url('../img/decor/decor-2.png');
+    bottom: 264px;
+    width: 384px;
+    height: 288px;
+  }
+  .about-me-container {
+    row-gap: 80px;
+    column-gap: 136px;
+  }
+  .picture-container {
+    padding-top: 272px;
+    padding-left: 208px;
+  }
+  .about-me-img {
+    width: 384px;
+    height: 448px;
+  }
+  .bio-container {
+    width: 488px;
+    height: 488px;
+  }
+  .text-container {
+    width: 100%;
+    padding-left: 240px;
+    gap: 136px;
+  }
+}
