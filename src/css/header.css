@@ -341,3 +341,11 @@ a {
 .dark .marquee-right .dot {
   color: #14c57c;
 }
+
+.dark .mob-menu-icon {
+  stroke: #f0f0f0;
+}
+
+.dark .mob-menu-close {
+  background-color: #1e2023;
+}
