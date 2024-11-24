@@ -1,3 +1,4 @@
+import iconsUrl from '../img/icons.svg';
 import axios from 'axios';
 
 import Swiper from 'swiper/bundle';
@@ -8,8 +9,8 @@ const slider = document.querySelector('.reviewsSwiper .swiper-wrapper');
 let swiper = new Swiper('.reviewsSwiper', {
   spaceBetween: 32,
   navigation: {
-    nextEl: ".custom-swiper-button-next",
-    prevEl: ".custom-swiper-button-prev",
+    nextEl: '.custom-swiper-button-next',
+    prevEl: '.custom-swiper-button-prev',
   },
   breakpoints: {
     768: {
@@ -21,7 +22,7 @@ let swiper = new Swiper('.reviewsSwiper', {
   },
 });
 
-const processReviews = (reviews) => {
+const processReviews = reviews => {
   return reviews.map(review => {
     return `
       <div class="swiper-slide">
@@ -30,7 +31,7 @@ const processReviews = (reviews) => {
           <span class="review-person">
             <span class="review-person-featured-icon">
               <svg class="review-person-featured-icon-cirle">
-                <use href="../img/icons.svg#icon-review-circle"></use>
+                <use href="${iconsUrl}#icon-review-circle"></use>
               </svg>
               <img class="review-person-featured-icon-img" src="${review.avatar_url}" alt="${review.author}" />
               <h3 class="review-person-text">${review.author}</h3>
@@ -43,7 +44,9 @@ const processReviews = (reviews) => {
 };
 
 async function fetchSlides() {
-  const response = await axios.get(`https://portfolio-js.b.goit.study/api/reviews`);
+  const response = await axios.get(
+    `https://portfolio-js.b.goit.study/api/reviews`
+  );
 
   return processReviews(response.data);
 }
