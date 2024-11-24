@@ -10,7 +10,7 @@ img.decor-points-bottom {
   position: relative;
 }
 .hero-title {
-  font-family: "Impact", sans-serif;
+  font-family: 'Impact', sans-serif;
   font-size: 64px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -62,7 +62,7 @@ img.decor-points-bottom {
   left: 32px;
 }
 .hero-text {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   line-height: 1.56;
   text-transform: uppercase;
@@ -78,7 +78,7 @@ img.decor-points-bottom {
   gap: 24px;
 }
 .media-link {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
@@ -150,10 +150,11 @@ img.decor-points-bottom {
     gap: 72px;
   }
   .hero-title {
-    max-width: 552px;
+    width: 100%;
   }
   .hero-image {
-    max-width: 100%;
+    max-width: 592px;
+    height: 100%;
     border-radius: 32px;
   }
   .btn-text-box {
