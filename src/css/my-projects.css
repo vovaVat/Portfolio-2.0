@@ -56,10 +56,19 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
-    border-style: none;
+    /* border-style: none; */
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
+    /* text-decoration: underline; */
+    /* border-bottom: 3px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #00b068;
+    border-style:solid;
+    border-bottom-width: 3px; */
+
 }
 
 .load-more-btn:hover {
@@ -67,15 +76,14 @@
 }
 
 .load-more-btn::after {
-    content: "";
-    border-radius: 18px;
-    width: 100%;
-    height: 2px;
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #00B068;
+    border-bottom: 2px solid #00B068;
+  display: block;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+  width: 100%;
+  content: "";
+  
 }
 
 .my-project-picture {
