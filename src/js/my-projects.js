@@ -1,4 +1,5 @@
 import imgProject1Path from '../img/Projects/Project1.jpg';
+
 import imgProject1Path_x2 from '../img/Projects/Project1-2x.jpg';
 import imgProject2Path from '../img/Projects/Project2.jpg';
 import imgProject2Path_x2 from '../img/Projects/Project2-2x.jpg';
@@ -25,62 +26,80 @@ const projects = [
   {
     img: imgProject1Path,
 
+
+
     skills: 'React, JavaScript, Node JS, Git',
     title: 'starlight studio landing page',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
     srcset: `${imgProject1Path}, ${imgProject1Path_x2}`,
   },
   {
+
     img: imgProject2Path,
+
     skills: 'React, JavaScript, Node JS, Git',
     title: 'energy flow webservice ',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
     srcset: `${imgProject2Path}, ${imgProject2Path_x2}`,
   },
   {
+
     img: imgProject3Path,
+
     skills: 'React, JavaScript, Node JS, Git',
     title: 'fruitbox online store',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
     srcset: `${imgProject3Path}, ${imgProject3Path_x2}`,
   },
   {
+
     img: imgProject4Path,
+
     skills: 'React, JavaScript, Node JS, Git',
     title: 'chego jewelry website',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
     srcset: `${imgProject4Path}, ${imgProject4Path_x2}`,
   },
   {
+
     img: imgProject5Path,
+
     skills: 'React, JavaScript, Node JS, Git',
     title: 'mimino website',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
     srcset: `${imgProject5Path}, ${imgProject5Path_x2}`,
   },
   {
+
     img: imgProject6Path,
+
     skills: 'React, JavaScript, Node JS, Git',
     title: 'vyshyvanka vibes Landing Page',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
     srcset: `${imgProject6Path}, ${imgProject6Path_x2}`,
   },
   {
+
     img: imgProject7Path,
+
     skills: 'React, JavaScript, Node JS, Git',
     title: 'green harvest online store',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
     srcset: `${imgProject7Path}, ${imgProject7Path_x2}`,
   },
   {
+
     img: imgProject8Path,
+
     skills: 'React, JavaScript, Node JS, Git',
     title: 'power pulse webservice ',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
     srcset: `${imgProject8Path}, ${imgProject8Path_x2}`,
   },
   {
+
     img: imgProject9Path,
+
     skills: 'React, JavaScript, Node JS, Git',
     title: 'wallet webservice',
     link: 'https://github.com/vovaVat/Portfolio-2.0',

@@ -159,89 +159,124 @@ a {
   display: none;
 }
 
+/*theme*/
 
 .theme-toggle {
+  background-color: #222;
+  border: none;
+  border-radius: 16px;
+  width: 48px;
+  height: 24px;
   position: relative;
-  width: 60px;
-  height: 34px;
 }
 
-.slider-checkbox {
-  display: none;
-}
-
-.slider-label {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #ccc;
-  border-radius: 34px;
-  cursor: pointer;
-  position: relative;
-  transition: background 0.3s ease;
-}
-
-.slider-checkbox:checked + .slider-label {
-  background: #292929;
-}
-
-.slider-thumb {
+.theme-toggle::before {
+  content: '';
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 28px;
-  height: 28px;
+  top: 2px;
+  left: 5px;
+  width: 19px;
+  height: 19px;
+  background-color: #00b068;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
-.slider-checkbox:checked + .slider-label .slider-thumb {
-  left: 29px;
+.theme-toggle.theme-toggle-dark::before {
+  transform: translateX(calc(100% - 4px));
+  position: absolute;
+  top: 2px;
+  left: 10px;
 }
 
-.slider-icon {
-  display: none;
-  fill: #14C57C;
-  width: 20px;
-  height: 20px;
-}
-
-.slider-icon.sun {
-  display: block;
-  fill: #14C57C;
-  width: 20px;
-  height: 20px;
-}
-
-.slider-checkbox:checked + .slider-label .slider-thumb .slider-icon.sun {
-  display: none;
-}
-
-.slider-checkbox:checked + .slider-label .slider-thumb .slider-icon.moon {
-  display: block;
-}
-
-.dark-theme{
-  background-color: #1E2023;
-}
-
-.dark-theme-p{
-  color: #ccc;
-}
-
-body.dark-theme {
-  background-color: #121212;
+.theme-toggle-dark {
+  background-color: #e4e5e6;
   color: white;
+  border: none;
+  border-radius: 16px;
+  width: 48px;
+  height: 24px;
+  position: relative;
 }
 
-body .dark-theme-text {
-  color: white;
+.dark {
+  background-color: #1e2023;
 }
 
+.dark h1,
+.dark h2,
+.dark h3,
+.dark a,
+.dark p {
+  color: #f0f0f0;
+}
 
-body.dark-theme p.dark-theme-text {
-  color: white;
+.dark .media-container {
+  background-color: #2a2d32;
+}
+
+.dark .hero-btn {
+  background-color: #00b068;
+}
+
+.dark .marquee-left {
+  background-color: #204136;
+}
+
+.dark .marquee-right {
+  background-color: #2a2d32;
+}
+
+.dark .my-projects-link {
+  background-color: #2a2d32;
+}
+
+.dark .load-more-btn {
+  color: #f0f0f0;
+  background-color: #1e2023;
+}
+
+.dark .icon-box {
+  background-color: #204136;
+}
+
+.dark .accordion-header-title,
+.dark .accordion-content {
+  color: #f0f0f0;
+}
+
+.dark .accordion-item.is-open {
+  background-color: #204136;
+}
+
+.dark .review {
+  background-color: #2a2d32;
+}
+
+.dark .together__contacts-list a,
+.dark .list-item:last-child {
+  color: #f0f0f0;
+}
+
+.dark .together__form input,
+.dark .together__form textarea {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
+.dark .modal {
+  background-color: #2a2d32;
+}
+
+.dark .modal__title {
+  color: #14c57c;
+}
+
+.dark .modal__text {
+  color: #f0f0f0;
+}
+
+.dark .modal__close::after,
+.dark .modal__close::before {
+  background-color: #f0f0f0;
 }

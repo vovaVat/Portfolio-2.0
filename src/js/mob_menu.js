@@ -10,21 +10,27 @@ menuBtn.addEventListener("click", onMenu);
 
 function onMenu() {
   mobMenu.classList.add("active");
-    header.classList.add("hidden");
-    main.classList.add("hidden");
-    footer.classList.add("hidden");
+  header.classList.add("hidden");
+  main.classList.add("hidden");
+  footer.classList.add("hidden");
 }
 
 mobMenuClose.addEventListener("click", closeMenu);
+mobMenuItems.forEach(item => item.addEventListener("click", closeMenu));
+
 
 function closeMenu() {
-       mobMenu.classList.remove("active");
-    header.classList.remove("hidden");
-    main.classList.remove("hidden");
-    footer.classList.remove("hidden");
+  mobMenu.classList.remove("active");
+  header.classList.remove("hidden");
+  main.classList.remove("hidden");
+  footer.classList.remove("hidden");
 }
 
+const themeToggle = document.querySelector(".theme-toggle");
+const body = document.body;
 
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  themeToggle.classList.toggle("theme-toggle-dark");
+});
 
-mobMenuItems.forEach(item => 
-    item.addEventListener("click", closeMenu));
