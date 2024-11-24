@@ -153,10 +153,11 @@ function createMarkup(arr) {
                     </svg>
                   </a>
                 </div>
-
             </li>
     `
     )
     .join('');
     projectsList.insertAdjacentHTML('beforeend', markup);
-}
+};
+
+
