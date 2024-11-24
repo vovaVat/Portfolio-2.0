@@ -81,6 +81,10 @@ const toggleModal = isVisible => {
   modal.classList.toggle('show', isVisible);
   backdrop.classList.toggle('visible', isVisible);
   document.body.style.overflow = isVisible ? 'hidden' : '';
+
+  isVisible
+    ? window.addEventListener('keydown', onEscPress)
+    : window.removeEventListener('keydown', onEscPress);
 };
 
 const showModal = ({ title, message }) => {
@@ -92,6 +96,10 @@ const showModal = ({ title, message }) => {
 
 const closeModal = () => {
   toggleModal(false);
+};
+
+const onEscPress = event => {
+  if (event.key === 'Escape') closeModal();
 };
 
 form.addEventListener('submit', onSubmit);
