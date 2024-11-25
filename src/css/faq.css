@@ -133,7 +133,7 @@
     height: 406.24px;
     background-image: url("../img/decor/decor-4.png");
     background-size: contain;
-    bottom: 0;
+    top: 500px;
     left: 0;
   }
 
