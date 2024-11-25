@@ -1,7 +1,7 @@
 :root {
   --var-text: var(--color-black);
   --var-bg-gray: var(--color-light-grey);
-  --var-gray-reviews: #CCCCCC;
+  --var-gray-reviews: #cccccc;
   --var-more-light-gray-reviews: #2929291a;
   --var-light-gray-reviews: #2929291d;
   --var-bg-gray-reviews: #e4e5e6;
@@ -10,10 +10,15 @@
 .dark {
   --var-text: var(--color-white);
   --var-bg-gray: var(--color-dark-grey);
-  --var-gray-reviews: #3B3F45;
-  --var-more-light-gray-reviews: #2A2D32;
-  --var-light-gray-reviews: #2A2D32;
-  --var-bg-gray-reviews: #3B3F45;
+  --var-gray-reviews: #3b3f45;
+  --var-more-light-gray-reviews: #2a2d32;
+  --var-light-gray-reviews: #2a2d32;
+  --var-bg-gray-reviews: #3b3f45;
+}
+
+.dark .review,
+.dark .review-name {
+  color: var(--color-white);
 }
 
 .reviews-container {
@@ -25,13 +30,6 @@
 }
 
 .reviews-title {
-  color: var(--var-text);
-  font-family: Impact;
-  font-size: 52px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.23em;
-  letter-spacing: 0.0346em;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
@@ -43,30 +41,20 @@
   gap: 16px;
 }
 
-.swiper-slide {
-  display: flex !important;
-  width: 320px;
+#reviews .swiper-slide {
+  display: flex;
   padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 24px;
   border-radius: 16px;
   background: var(--var-bg-gray);
   height: auto;
   flex-direction: column;
   justify-content: space-between;
-  height: auto !important;
 }
 
 .review {
-  color: var(--var-text);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 1.5em;
   letter-spacing: 0.03125em;
-  margin-bottom: 24px;
   height: auto;
 }
 
@@ -75,13 +63,8 @@
 }
 
 .review-name {
-  color: var(--var-text);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: 1.5em;
-  letter-spacing: 0.03125em;
 }
 
 .swiper-container {
@@ -90,7 +73,6 @@
 
 .swiper-wrapper {
   margin-bottom: 24px;
-  display: flex;
   align-items: stretch;
 }
 
@@ -147,9 +129,6 @@
 
 @media screen and (min-width: 768px) {
   .reviews-title {
-    font-size: 108px;
-    line-height: 1.148em;
-    letter-spacing: 0.0167em;
     margin-bottom: 60px;
   }
 }
@@ -175,4 +154,3 @@
     left: 4px;
   }
 }
-
