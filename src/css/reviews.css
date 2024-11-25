@@ -1,26 +1,3 @@
-:root {
-  --var-text: var(--color-black);
-  --var-bg-gray: var(--color-light-grey);
-  --var-gray-reviews: #cccccc;
-  --var-more-light-gray-reviews: #2929291a;
-  --var-light-gray-reviews: #2929291d;
-  --var-bg-gray-reviews: #e4e5e6;
-}
-
-.dark {
-  --var-text: var(--color-white);
-  --var-bg-gray: var(--color-dark-grey);
-  --var-gray-reviews: #3b3f45;
-  --var-more-light-gray-reviews: #2a2d32;
-  --var-light-gray-reviews: #2a2d32;
-  --var-bg-gray-reviews: #3b3f45;
-}
-
-.dark .review,
-.dark .review-name {
-  color: var(--color-white);
-}
-
 .reviews-container {
   position: relative;
 }
