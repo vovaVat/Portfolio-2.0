@@ -179,7 +179,7 @@ a {
 
 .theme-toggle {
   margin-left: 30px;
-  background-color: #222;
+  background-color: #e4e5e6;
   border: none;
   border-radius: 16px;
   width: 48px;
@@ -206,8 +206,36 @@ a {
   left: 10px;
 }
 
+.theme-toggle.theme-toggle-dark::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 18px;
+  border-radius: 50%;
+  background-color: #2a2d32;
+  width: 19px;
+  height: 19px;
+  display: none;
+  animation: appear 0.4s forwards;
+}
+
+.dark .theme-toggle.theme-toggle-dark::after {
+  display: inline;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .theme-toggle-dark {
-  background-color: #e4e5e6;
+  background-color: #2a2d32;
   color: white;
   border: none;
   border-radius: 16px;
