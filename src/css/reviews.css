@@ -1,3 +1,12 @@
+:root {
+  --var-text: var(--color-black);
+  --var-bg-gray: var(--color-light-grey);
+  --var-gray-reviews: #cccccc;
+  --var-more-light-gray-reviews: #2929291a;
+  --var-light-gray-reviews: #2929291d;
+  --var-bg-gray-reviews: #e4e5e6;
+}
+
 .dark .review,
 .dark .review-name {
   color: var(--color-white);
