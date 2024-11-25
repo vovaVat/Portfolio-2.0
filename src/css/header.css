@@ -246,6 +246,18 @@ a {
 
 .dark {
   background-color: #1e2023;
+  --var-text: var(--color-white);
+  --var-bg-gray: var(--color-dark-grey);
+  --var-gray-reviews: #3b3f45;
+  --var-more-light-gray-reviews: #2a2d32;
+  --var-light-gray-reviews: #2a2d32;
+  --var-bg-gray-reviews: #3b3f45;
+}
+
+.dark .swiper-button-next-new,
+.dark .swiper-button-prev-new {
+  background-color: #1e2023;
+  border: 1px solid var(--color-white);
 }
 
 .dark h1,
@@ -353,10 +365,10 @@ a {
   fill: #f0f0f0;
 }
 
-.dark .custom-swiper-button-prev,
-.dark .custom-swiper-button-next {
-  stroke: #f0f0f0;
-  fill: #1e2023;
+.dark .reviews-container,
+.dark .swiper-container {
+  color: #f0f0f0;
+  background-color: #1e2023;
 }
 
 .dark .list {
