@@ -56,18 +56,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
-    /* border-style: none; */
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
-    /* text-decoration: underline; */
-    /* border-bottom: 3px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-color: #00b068;
-    border-style:solid;
-    border-bottom-width: 3px; */
 
 }
 
@@ -88,8 +79,8 @@
 
 .my-project-picture {
     border-radius: 16px;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 
 .project-title {
@@ -168,7 +159,6 @@
 @media screen and (min-width: 1158px) {
     .my-project-picture {
         width: 1008px;
-        margin-top: 80px;
     }
 
     li.projects-list-card {
