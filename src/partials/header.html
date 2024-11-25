@@ -1,11 +1,14 @@
 <header class="page-header">
   <div class="container hed-container">
-    <nav class="header-nav">
-      <h2 class="header-logo">
-        <a href="./index.html"
-          >LLOYD<span class="logo-part">JEFFERSON.</span></a
-        >
-      </h2>
+    <nav class="header-nav link">
+      <div class="container-btm-theme">
+        <h2 class="header-logo">
+          <a href="./index.html"
+            >LLOYD<span class="logo-part">JEFFERSON.</span></a
+          >
+        </h2>
+        <button class="theme-toggle"></button>
+      </div>
       <ul class="hed-list">
         <li class="hed-list-item">
           <a class="nav-link hover" href="#about-me">About me</a>
@@ -19,22 +22,8 @@
       </ul>
     </nav>
 
-    <div class="theme-toggle">
-      <input type="checkbox" id="theme-slider" class="slider-checkbox">
-      <label for="theme-slider" class="slider-label">
-        <div class="slider-thumb">
-          <svg class="slider-icon sun" width="40" height="40">
-            <use href="./img/icons.svg#icon-topic-light"></use>
-          </svg>
-          <svg class="slider-icon moon" width="40" height="40">
-            <use href="./img/icons.svg#icon-topic-dark"></use>
-          </svg>
-        </div>
-      </label>
-    </div>
-
     <button class="menu-btm" type="button">
-      <svg class="menu-burger" width="22" height="16">
+      <svg class="menu-burger" width="32" height="32">
         <use href="{=$icons-path}#icon-menu-burger"></use>
       </svg>
     </button>
