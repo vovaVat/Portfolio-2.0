@@ -27,7 +27,7 @@
   transform: scale(1);
 }
 
-.benefits-background-container {
+.img-decor {
   display: none;
 }
 
@@ -119,6 +119,7 @@
   }
 
   .img-decor {
+    display: block;
     position: absolute;
     top: -80px;
     right: 24px;
