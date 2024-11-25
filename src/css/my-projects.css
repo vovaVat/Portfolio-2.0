@@ -1,5 +1,10 @@
 .my-projects-title {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: #292929;
     text-align: center;
 }
 
@@ -7,11 +12,14 @@
     color: #00b068;
 }
 
-.projects-list {
-    margin: 40px 0;
+.projects-list{
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+}
+.my-projects-container {
+    padding: 0;
 }
 
 .my-projects-link {
@@ -19,30 +27,34 @@
     padding: 12px 24px;
     width: 125px;
     height: 48px;
-    background-color: var(--color-light-grey);
-    font-weight: 500;
+    background: #e4e5e6;
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
     align-self: flex-end;
-    transition: background 0.3s;
+    
 }
 
 .my-projects-link:hover {
-    background-color: var(--color-hover-grey);
+    background: #bbb;
 }
 
 .load-more-btn {
-    display: block;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
     padding: 12px 24px;
     width: 155px;
     height: 52px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.55556;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: #292929;
     margin-bottom: 0;
     margin-right: auto;
@@ -55,21 +67,19 @@
 }
 
 .load-more-btn::after {
-    content: "";
-    position: absolute;
-    width: 106px;
-    height: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 7px;
-    background: #00b068;
+    border-bottom: 2px solid #00B068;
+  display: block;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+  width: 100%;
+  content: "";
+  
 }
 
 .my-project-picture {
     border-radius: 16px;
-
-
-}
+ }
 
 .project-title {
     font-weight: 500;
@@ -77,6 +87,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+    color: #292929;
 }
 
 .discription-container {
@@ -89,15 +100,21 @@
 .skills-text {
     margin-bottom: 16px;
 }
-
-.icon-Vector-above-right-24 {
+.icon-Line-below {
+    display: inline-block;
+    width: 15px;
+    height: 3px;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  .icon-Vector-above-right-24 {
     display: inline-block;
     width: 16px;
     height: 16px;
     stroke: currentColor;
     fill: currentColor;
     margin-left: 12px;
-}
+  }
 
 #projects .wrapper {
     margin-bottom: 16px;
@@ -107,12 +124,18 @@
     .my-projects-container {
         padding: 0 32px;
     }
-    .projects-list {
+    .projects-list{
         gap: 60px;
     }
 
     .my-project-picture {
         width: 704px;
+    }
+
+    .my-projects-title {
+        font-size: 108px;
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
     }
 
     .project-title {
