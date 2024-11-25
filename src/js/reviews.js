@@ -61,6 +61,23 @@ swiper.on('slideChange', function () {
   }
 });
 
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Tab') {
+    const activeElement = document.activeElement;
+    const buttonsContainer = document.querySelector('.swiper-buttons');
+
+    if (buttonsContainer.contains(activeElement)) {
+      if (activeElement.classList.contains('swiper-button-next-new')) {
+        swiper.slideNext();
+      } else if (activeElement.classList.contains('swiper-button-prev-new')) {
+        swiper.slidePrev();
+      }
+
+      event.preventDefault();
+    }
+  }
+});
+
 fetch('https://portfolio-js.b.goit.study/api/reviews')
   .then(response => response.json())
   .then(data => {
