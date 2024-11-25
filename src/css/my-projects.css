@@ -42,9 +42,12 @@
     line-height: 1.55556;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin: 0 auto;
-    position: relative;
-    transition: color 0.3s;
+
+    color: #292929;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .load-more-btn:hover {
@@ -64,6 +67,8 @@
 
 .my-project-picture {
     border-radius: 16px;
+
+
 }
 
 .project-title {
@@ -128,7 +133,6 @@
 @media screen and (min-width: 1158px) {
     .my-project-picture {
         width: 1008px;
-        margin-top: 80px;
     }
 
     li.projects-list-card {
