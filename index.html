@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/Portfolio-2.0/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio-2.0/assets/vendor-Ddw0FPuB.js">
     <link rel="stylesheet" crossorigin href="/Portfolio-2.0/assets/vendor-Cvhwh8Pc.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio-2.0/assets/index-Bs6H-UED.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio-2.0/assets/index-BNUKEMqI.css">
   </head>
   <body>
     <header class="page-header">
@@ -101,9 +101,15 @@
       <picture>
         <source
           media="(min-width: 1280px)"
-          srcset="/Portfolio-2.0/assets/man-Di4daTfM.png 1x, /Portfolio-2.0/assets/man-2x-ChJYXvea.png 2x"
+          srcset="{=$man1x-img-path} 1x, {=$man2x-2x-img-path} 2x"
         />
-        <img src="/Portfolio-2.0/assets/man-Di4daTfM.png" class="hero-image" alt="Developer" />
+        <img
+          src="{=$man1x-img-path}"
+          class="hero-image"
+          alt="Developer"
+          width="592px"
+          height="444px"
+        />
       </picture>
     </div>
     <img class="top-points" src="/Portfolio-2.0/assets/decor-1-DFhVG1k4.png" alt="background-drops" />
@@ -118,7 +124,7 @@
         <svg class="arrow-icon" width="30" height="16">
           <use href="/Portfolio-2.0/assets/icons-CV_9Shnm.svg#icon-btn-hero"></use>
         </svg>
-        <a class="arrow-text dark-theme" href="#hero-btn">Order the project</a>
+        <a class="arrow-text dark-theme" href="#contacts">Order the project</a>
         <a class="hero-btn" id="hero-btn" href="#contacts"></a>
       </div>
       <p class="hero-text dark-theme">
