@@ -94,6 +94,8 @@ a {
 /* ------Mob-menu-------- */
 
 .mob-menu {
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -110,7 +112,6 @@ a {
 }
 
 .mob-menu-container {
-  padding-top: 16px;
   height: 100%;
 }
 
@@ -118,8 +119,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 16px 16px 20px;
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .mob-menu-close {
@@ -134,11 +135,16 @@ a {
 .container-mob-nav {
   background-image: url('../img/mob_menu/decor8.png');
   background-size: 100% auto;
-  padding: 16px 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 24px; */
 }
 
 .mob-nav {
-  padding: 260px 119px 324px;
 }
 
 .mob-list {
@@ -349,7 +355,3 @@ a {
 .dark .mob-menu-close {
   background-color: #1e2023;
 }
-
-/* .dark .mob-menu-close {
-  background-color: #1e2023;
-} */

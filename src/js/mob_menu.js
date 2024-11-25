@@ -1,8 +1,7 @@
 const menuBtn = document.querySelector(".menu-btm");
 const mobMenu = document.querySelector(".mob-menu");
 const mobMenuClose = document.querySelector(".mob-menu-close");
-const mobMenuLink = document.querySelectorAll(".mob-nav a");
-const headerLink = document.querySelectorAll(".header-nav a");
+const mobMenuLink = document.querySelectorAll(".link a");
 const header = document.querySelector(".page-header");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer")
@@ -30,17 +29,6 @@ function closeMenu() {
 }
 
 mobMenuLink.forEach(item => {
-  item.addEventListener("click", (event) => {
-    event.preventDefault();
-    const targetId = item.getAttribute("href").substring(1);
-    smoothScroll(targetId);
-    mobMenu.classList.remove("active");
-    document.body.classList.remove("no-scroll");
-  });
-});
-
-
-headerLink.forEach(item => {
   item.addEventListener("click", (event) => {
     event.preventDefault();
     const targetId = item.getAttribute("href").substring(1);
