@@ -79,8 +79,7 @@
 
 .my-project-picture {
     border-radius: 16px;
-    /* margin-right: auto;
-    margin-left: auto; */
+ 
 }
 
 .project-title {
@@ -102,7 +101,6 @@
 .skills-text {
     margin-bottom: 16px;
 }
-
 .icon-Line-below {
     display: inline-block;
     width: 15px;
