@@ -10,6 +10,7 @@
   --color-accent-green: #00b068;
   --color-white: #f0f0f0;
   --color-light-grey: #e4e5e6;
+  --color-dark-grey: #2a2d32;
   --color-light-accent: #bcdfd1;
   --color-dark-accent: #204136;
   --color-hover-green: #009156;
@@ -23,11 +24,6 @@ body {
   color: var(--color-black);
   background-color: var(--color-white);
   margin: 0;
-}
-
-.dark-theme {
-  color: var(--color-white);
-  background-color: var(--color-black);
 }
 
 p,
@@ -49,6 +45,7 @@ h2 {
   font-size: 52px;
   letter-spacing: 1.8px;
   line-height: 64px;
+  font-weight: 400;
 }
 
 ul {
@@ -67,7 +64,6 @@ img {
   display: block;
   max-width: 100%;
   object-fit: cover;
-  height: auto;
 }
 
 a.hover {
@@ -92,10 +88,9 @@ a.hover:hover {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 360px;
   padding: 0 20px;
   margin: 0 auto;
-  width: 100%;
 }
 
 .section {

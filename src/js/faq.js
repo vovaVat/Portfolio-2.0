@@ -43,7 +43,7 @@ function createAccordionItem(accordionItemData) {
     <div class="accordion-item">
       <div class="accordion-header">
         <button class="accordion-trigger-button">
-          <span class="accordion-header-title"> ${heading} </span>
+          <p class="accordion-header-title"> ${heading} </p>
 
           <div class="accordion-trigger-button-icon">
             <svg class="down-icon" width="32" height="32" aria-label="icon-Dropdown icon">
@@ -56,7 +56,7 @@ function createAccordionItem(accordionItemData) {
         </button>
       </div>
       <div class="accordion-panel">
-        <div class="accordion-content">${content}</div>
+        <p class="accordion-content">${content}</p>
       </div>
     </div>`;
 }
