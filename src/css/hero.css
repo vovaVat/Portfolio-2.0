@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* ----Hero320px---- */
 picture,
 img.decor-points-bottom {
@@ -26,7 +29,8 @@ img.decor-points-bottom {
   z-index: -1;
 }
 .btn-text-box {
-  padding: 40px 0 72px;
+  margin-top: 40px;
+  margin-bottom: 72px;
 }
 .hero-btn-box {
   display: flex;
@@ -98,10 +102,11 @@ img.decor-points-bottom {
     padding-top: 88px;
   }
   .btn-text-box {
-    padding: 60px 0 88;
+    margin-top: 60px;
+    margin-bottom: 104px;
   }
   .hero-title {
-    font-size: 124px;
+    font-size: 120px;
     line-height: 1.19;
     max-width: 704px;
   }
@@ -155,11 +160,12 @@ img.decor-points-bottom {
   }
   .hero-image {
     max-width: 592px;
-    height: 100%;
     border-radius: 32px;
   }
   .btn-text-box {
-    padding: 96px 0 80px 72px;
+    margin-top: 80px;
+    margin-bottom: 96px;
+    padding-left: 72px;
     display: flex;
     gap: 136px;
     justify-content: space-between;
