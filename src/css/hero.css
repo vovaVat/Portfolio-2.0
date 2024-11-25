@@ -57,6 +57,10 @@ img.decor-points-bottom {
 .hero-btn:focus {
   background-color: var(--color-accent-green);
 }
+.arrow-text:hover + .hero-btn,
+.arrow-text:focus + .hero-btn {
+  background-color: var(--color-accent-green);
+}
 .arrow-text {
   font-size: 18px;
   line-height: 1.56;
