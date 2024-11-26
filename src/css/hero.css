@@ -2,8 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 /* ----Hero320px---- */
-picture,
-img.decor-points-bottom {
+.hero-photo,
+.hero-image,
+.decor-points-bottom {
   display: none;
 }
 .hero-section {
@@ -96,7 +97,7 @@ img.decor-points-bottom {
 }
 /*---- Hero 768----*/
 @media screen and (min-width: 768px) {
-  img.decor-points-bottom {
+  .decor-points-bottom {
     display: block;
   }
   .hero-section {
@@ -149,7 +150,7 @@ img.decor-points-bottom {
 }
 /* ----hero1280---- */
 @media screen and (min-width: 1280px) {
-  picture {
+  .hero-photo {
     display: block;
     width: 100%;
     text-align: center;
