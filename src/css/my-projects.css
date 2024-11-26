@@ -5,7 +5,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
-    max-width: 291px;
     text-align: center;
 }
 
@@ -13,6 +12,12 @@
     color: #00b068;
 }
 
+.projects-list{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
 .my-projects-container {
     padding: 0;
 }
@@ -22,13 +27,18 @@
     padding: 12px 24px;
     width: 125px;
     height: 48px;
-    /* background: #e4e5e6; */
+    background: #e4e5e6;
     font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
     align-self: flex-end;
+    
+}
+
+.my-projects-link:hover {
+    background: #bbb;
 }
 
 .load-more-btn {
@@ -46,22 +56,30 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
-    border-style: none;
     margin-bottom: 0;
-    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.load-more-btn:hover {
+    color: #00b068;
 }
 
 .load-more-btn::after {
-    content: "";
-    width: 100%;
+    border-bottom: 2px solid #00B068;
+  display: block;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+  width: 100%;
+  content: "";
+  
 }
 
 .my-project-picture {
     border-radius: 16px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 40px;
-}
+ }
 
 .project-title {
     font-weight: 500;
@@ -82,6 +100,21 @@
 .skills-text {
     margin-bottom: 16px;
 }
+.icon-Line-below {
+    display: inline-block;
+    width: 15px;
+    height: 3px;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  .icon-Vector-above-right-24 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: currentColor;
+    margin-left: 12px;
+  }
 
 #projects .wrapper {
     margin-bottom: 16px;
@@ -91,20 +124,18 @@
     .my-projects-container {
         padding: 0 32px;
     }
+    .projects-list{
+        gap: 60px;
+    }
 
     .my-project-picture {
         width: 704px;
-        margin-top: 60px;
     }
 
     .my-projects-title {
-        max-width: 590px;
-        margin-bottom: 60px;
         font-size: 108px;
         line-height: 1.14815;
         letter-spacing: 0.02em;
-        margin-right: auto;
-        margin-left: auto;
     }
 
     .project-title {
@@ -125,7 +156,6 @@
 @media screen and (min-width: 1158px) {
     .my-project-picture {
         width: 1008px;
-        margin-top: 80px;
     }
 
     li.projects-list-card {

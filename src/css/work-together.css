@@ -1,5 +1,5 @@
-.container {
-  width: unset;
+.together {
+  padding-bottom: 80px;
 }
 
 .together__title {
@@ -201,6 +201,7 @@
 .modal__close::after {
   transform: rotate(45deg);
 }
+
 .modal__close::before {
   transform: rotate(-45deg);
 }
@@ -214,6 +215,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .together {
+    padding-bottom: 124px;
+  }
+
   .together .container {
     position: relative;
   }
@@ -264,6 +269,10 @@
 }
 
 @media screen and (min-width: 1158px) {
+  .together {
+    padding-bottom: 164px;
+  }
+
   .together .container:after {
     background-image: url("../img/decor/decor-5.png");
     background-size: contain;
@@ -272,6 +281,7 @@
     top: -116px;
     right: 21px;
   }
+
   .together__title {
     max-width: 510px;
     margin-bottom: 80px;
@@ -290,6 +300,10 @@
     margin-bottom: 0;
   }
 
+  .together__contacts-text {
+    margin-bottom: 0;
+  }
+
   .together__contacts-list {
     flex-direction: column;
   }
@@ -305,6 +319,7 @@
   .list-item + .list-item {
     margin-left: 0;
   }
+
   .together__form {
     max-width: 590px;
     width: 100%;

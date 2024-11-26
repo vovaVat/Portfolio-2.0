@@ -1,124 +1,146 @@
-.review-content {
-  padding: 0px 32px;
-  width: 1280px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+:root {
+  --var-text: var(--color-black);
+  --var-bg-gray: var(--color-light-grey);
+  --var-gray-reviews: #cccccc;
+  --var-more-light-gray-reviews: #2929291a;
+  --var-light-gray-reviews: #2929291d;
+  --var-bg-gray-reviews: #e4e5e6;
 }
 
-.review-title {
-  letter-spacing: 1.8px;
-  line-height: 124px;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 80px;
+.dark .review,
+.dark .review-name {
+  color: var(--color-white);
 }
 
-.swiper {
+.reviews-container {
   position: relative;
-  width: 100%;
-  height: 100%;
 }
 
-.custom-navigation {
-  position: absolute;
-  top: 82%;
-  margin-top: 20px;
-  width: 100%;
+.reviews-container {
+  height: auto;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.reviews-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.review-img-name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#reviews .swiper-slide {
+  display: flex;
+  padding: 32px;
+  gap: 24px;
+  border-radius: 16px;
+  background: var(--var-bg-gray);
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .review {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 16px;
-  padding: 32px;
-  width: 592px;
-  height: 224px;
-  background: var(--color-light-grey);
-}
-
-.review-text {
-  text-align: left;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.03em;
-  color: var(--color-black);
+  letter-spacing: 0.03125em;
+  height: auto;
 }
 
-.review-person {
-  width: 528px;
-  height: 40px;
-  align-self: flex-start;
-}
-
-.review-person-featured-icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-}
-
-.review-person-featured-icon-img {
+.review-img {
   border-radius: 24px;
-  width: 40px;
-  height: 40px;
 }
 
-.review-person-featured-icon-circle {
-  border-radius: 100%;
-  fill: var(--color-light-accent);
-}
-
-.review-person-text {
+.review-name {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.03em;
-  padding-left: 16px;
-  color: var(--color-black);
+  line-height: 1.5em;
 }
 
-.custom-swiper-button-prev,
-.custom-swiper-button-next {
+.swiper-container {
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
+  justify-content: end;
+  gap: 16px;
+}
+
+.swiper-button-prev-new,
+.swiper-button-next-new {
+  display: flex;
   height: 40px;
-  background-color: #204136;
-  color: white;
-  border-radius: 50%;
+  width: 40px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--var-light-gray-reviews);
+  cursor: pointer;
+}
+
+.swiper-button-prev-new:hover,
+.swiper-button-next-new:hover {
+  border: 1px solid var(--var-light-gray-reviews);
+  background: var(--var-bg-gray-reviews);
+  border-radius: 8px;
+}
+
+.swiper-button-prev-new.swiper-button-disabled:hover,
+.swiper-button-next-new.swiper-button-disabled:hover {
+  border: 1px solid var(--var-light-gray-reviews);
+  background: none;
+}
+
+.icon-left {
+  stroke: #000;
+  fill: transparent;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  stroke-width: 2px;
-  stroke: var(--color-black);
-  fill: var(--color-white);
+  top: 6px;
+  left: 5px;
+  height: 20px;
 }
 
-.custom-swiper-button-prev {
-  right: 60px;
+.icon-right {
+  stroke: #000;
+  fill: transparent;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 20px;
 }
 
-.custom-swiper-button-next {
-  right: 0px;
+@media screen and (min-width: 768px) {
+  .reviews-title {
+    margin-bottom: 60px;
+  }
 }
 
-.custom-swiper-button-prev svg,
-.custom-swiper-button-next svg {
-  width: 100%;
-  height: 100%;
+@media screen and (min-width: 1280px) {
+  .reviews-title {
+    margin-bottom: 80px;
+  }
+
+  .swiper-button-prev-new,
+  .swiper-button-next-new {
+    height: 48px;
+    width: 48px;
+  }
+
+  .icon-left {
+    top: 10px;
+    left: 9px;
+  }
+
+  .icon-right {
+    top: 10px;
+    left: 4px;
+  }
 }

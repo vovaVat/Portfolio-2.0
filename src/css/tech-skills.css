@@ -2,15 +2,6 @@
   overflow: hidden;
 }
 
-.container-tech {
-  max-width: max-content;
-  padding: 0;
-}
-
-.title-techskills {
-  display: none;
-}
-
 /* *,
 *::before,
 *::after {
