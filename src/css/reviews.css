@@ -60,10 +60,10 @@
 
 .swiper-container {
   overflow: hidden;
+  margin-bottom: 24px;
 }
 
 .swiper-wrapper {
-  margin-bottom: 24px;
   align-items: stretch;
 }
 
