@@ -108,9 +108,9 @@
     z-index: -1;
   }
   .about-me-header {
-    font-size: 52px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    font-size: 108px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     width: 100%;
     margin-bottom: 0;
   }
@@ -140,7 +140,6 @@
     flex-wrap: wrap;
     gap: 32px;
     width: 704px;
-    height: 280px;
   }
   .education-container {
     width: 336px;
