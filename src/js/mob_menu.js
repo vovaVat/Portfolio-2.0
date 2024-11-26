@@ -58,9 +58,11 @@ function applyTheme(theme) {
   if (theme === "dark") {
     body.classList.add("dark");
     themeToggle.classList.add("theme-toggle-dark");
+    localStorage.setItem("favicon", "/img/favicon-dark.ico");
   } else {
     body.classList.remove("dark");
     themeToggle.classList.remove("theme-toggle-dark");
+    localStorage.setItem("favicon", "/img/favicon.svg");
   }
 }
 
@@ -83,3 +85,8 @@ themeToggle.addEventListener("click", () => {
     favicon.href = "/img/favicon.svg";
     }
 });
+
+const savedFavicon = localStorage.getItem("favicon");
+if (savedFavicon) {
+  favicon.href = savedFavicon;
+}

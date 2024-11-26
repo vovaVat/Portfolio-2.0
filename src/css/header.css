@@ -64,16 +64,6 @@ a {
     padding-bottom: 32px;
   }
 
-  .hed-container {
-    /* display: grid; */
-    /* grid-template-columns: 1fr auto; */
-  }
-
-  .header-nav {
-    /* display: flex; */
-    /* align-items: center; */
-  }
-
   .hed-list {
     font-weight: 300;
     font-size: 16px;
@@ -141,7 +131,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 24px; */
 }
 
 .mob-nav {
