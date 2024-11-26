@@ -45,7 +45,6 @@ html {
   margin-bottom: 40px;
 }
 .arrow-icon {
-  stroke: 2px;
   fill: var(--color-accent-green);
 }
 .hero-btn {
