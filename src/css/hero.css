@@ -153,7 +153,6 @@ html {
   .hero-photo {
     display: block;
     width: 100%;
-    text-align: center;
   }
   .hero-title-box {
     display: flex;
@@ -163,7 +162,7 @@ html {
     width: 100%;
   }
   .hero-image {
-    max-width: 592px;
+    display: block;
     border-radius: 32px;
   }
   .hero-container {
