@@ -69,9 +69,17 @@ if (savedTheme) {
   applyTheme(savedTheme);
 }
 
+const favicon = document.querySelector(".favicon");
+
 themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");
   themeToggle.classList.toggle("theme-toggle-dark");
   const newTheme = body.classList.contains("dark") ? "dark" : "light";
   saveTheme(newTheme);
+
+  if (body.classList.contains("dark")) {
+    favicon.href = "/img/favicon-dark.ico";
+  } else {
+    favicon.href = "/img/favicon.svg";
+    }
 });
