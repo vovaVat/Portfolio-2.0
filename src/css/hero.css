@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 /* ----Hero320px---- */
+.hero-photo,
 .hero-image,
 .decor-points-bottom {
   display: none;
@@ -162,10 +163,7 @@ html {
   }
   .hero-image {
     display: block;
-    max-width: 592px;
     border-radius: 32px;
-    width: 100%;
-    text-align: center;
   }
   .hero-container {
     margin-bottom: 80px;
