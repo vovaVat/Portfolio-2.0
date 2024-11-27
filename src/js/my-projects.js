@@ -28,70 +28,70 @@ const projects = [
     skills: 'React, JavaScript, Node JS, Git',
     title: 'starlight studio landing page',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject1Path}, ${imgProject1Path_x2}`,
+    srcset: `${imgProject1Path} 1x, ${imgProject1Path_x2}`,
   },
   {
     img: imgProject2Path,
     skills: 'React, JavaScript, Node JS, Git',
     title: 'energy flow webservice ',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject2Path}, ${imgProject2Path_x2}`,
+    srcset: `${imgProject2Path} 1x, ${imgProject2Path_x2}`,
   },
   {
     img: imgProject3Path,
     skills: 'React, JavaScript, Node JS, Git',
     title: 'fruitbox online store',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject3Path}, ${imgProject3Path_x2}`,
+    srcset: `${imgProject3Path} 1x, ${imgProject3Path_x2}`,
   },
   {
     img: imgProject4Path,
     skills: 'React, JavaScript, Node JS, Git',
     title: 'chego jewelry website',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject4Path}, ${imgProject4Path_x2}`,
+    srcset: `${imgProject4Path} 1x, ${imgProject4Path_x2}`,
   },
   {
     img: imgProject5Path,
     skills: 'React, JavaScript, Node JS, Git',
     title: 'mimino website',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject5Path}, ${imgProject5Path_x2}`,
+    srcset: `${imgProject5Path} 1x, ${imgProject5Path_x2}`,
   },
   {
     img: imgProject6Path,
     skills: 'React, JavaScript, Node JS, Git',
     title: 'vyshyvanka vibes Landing Page',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject6Path}, ${imgProject6Path_x2}`,
+    srcset: `${imgProject6Path} 1x, ${imgProject6Path_x2}`,
   },
   {
     img: imgProject7Path,
     skills: 'React, JavaScript, Node JS, Git',
     title: 'green harvest online store',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject7Path}, ${imgProject7Path_x2}`,
+    srcset: `${imgProject7Path} 1x, ${imgProject7Path_x2}`,
   },
   {
     img: imgProject8Path,
     skills: 'React, JavaScript, Node JS, Git',
     title: 'power pulse webservice ',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject8Path}, ${imgProject8Path_x2}`,
+    srcset: `${imgProject8Path} 1x, ${imgProject8Path_x2}`,
   },
   {
     img: imgProject9Path,
     skills: 'React, JavaScript, Node JS, Git',
     title: 'wallet webservice',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject9Path}, ${imgProject9Path_x2}`,
+    srcset: `${imgProject9Path} 1x, ${imgProject9Path_x2}`,
   },
   {
     img: imgProject10Path,
     skills: 'React, JavaScript, Node JS, Git',
     title: 'English excellence webservice ',
     link: 'https://github.com/vovaVat/Portfolio-2.0',
-    srcset: `${imgProject10Path}, ${imgProject10Path_x2}`,
+    srcset: `${imgProject10Path} 1x, ${imgProject10Path_x2}`,
   },
 ];
 
@@ -122,7 +122,7 @@ function createMarkup(arr) {
       ({ img, skills, title, link, srcset }) =>
         `
     <li class="projects-list-card">
-                <img srcset="${srcset}" src="${img}" alt="${title}" width="320" class="my-project-picture">
+                <img srcset="${srcset} 2x" src="${img}" alt="${title}" width="320" class="my-project-picture">
                 <div class="discription-container">
                     <div class="wrapper">
                         <p class="skills-text">${skills}</p>
