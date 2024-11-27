@@ -58,7 +58,7 @@ function applyTheme(theme) {
   if (theme === "dark") {
     body.classList.add("dark");
     themeToggle.classList.add("theme-toggle-dark");
-    localStorage.setItem("favicon", "/img/favicon-dark.ico");
+    localStorage.setItem("favicon", "/img/favicon-dark.svg");
   } else {
     body.classList.remove("dark");
     themeToggle.classList.remove("theme-toggle-dark");
@@ -80,7 +80,7 @@ themeToggle.addEventListener("click", () => {
   saveTheme(newTheme);
 
   if (body.classList.contains("dark")) {
-    favicon.href = "/img/favicon-dark.ico";
+    favicon.href = "/img/favicon-dark.svg";
   } else {
     favicon.href = "/img/favicon.svg";
     }
