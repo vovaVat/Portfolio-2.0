@@ -58,11 +58,11 @@ function applyTheme(theme) {
   if (theme === "dark") {
     body.classList.add("dark");
     themeToggle.classList.add("theme-toggle-dark");
-    localStorage.setItem("favicon", "./img/favicon-dark.svg");
+    localStorage.setItem("favicon", "/Portfolio-2.0/assets/favicon-CO561JeL.svg");
   } else {
     body.classList.remove("dark");
     themeToggle.classList.remove("theme-toggle-dark");
-    localStorage.setItem("favicon", "./img/favicon.svg");
+    localStorage.setItem("favicon", "/favicon-dark.svg");
   }
 }
 
@@ -80,9 +80,9 @@ themeToggle.addEventListener("click", () => {
   saveTheme(newTheme);
 
   if (body.classList.contains("dark")) {
-    favicon.href = "./img/favicon-dark.svg";
+    favicon.href = "/Portfolio-2.0/assets/favicon-CO561JeL.svg";
   } else {
-    favicon.href = "./img/favicon.svg";
+    favicon.href = "/favicon-dark.svg";
     }
 });
 
