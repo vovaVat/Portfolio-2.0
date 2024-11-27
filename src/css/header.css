@@ -394,3 +394,13 @@ a {
 .dark .mob-menu-close {
   background-color: #1e2023;
 }
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #f0f0f0;
+  border: none;
+}
+
+.dark .together__form input:invalid {
+  color: #e74a3b;
+}

@@ -71,7 +71,7 @@ if (savedTheme) {
   applyTheme(savedTheme);
 }
 
-const favicon = document.querySelector(".favicon");
+const favicon = document.querySelector("link[rel='icon']");
 
 themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");
@@ -90,3 +90,5 @@ const savedFavicon = localStorage.getItem("favicon");
 if (savedFavicon) {
   favicon.href = savedFavicon;
 }
+
+
