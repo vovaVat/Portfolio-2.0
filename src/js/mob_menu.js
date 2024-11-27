@@ -58,9 +58,11 @@ function applyTheme(theme) {
   if (theme === "dark") {
     body.classList.add("dark");
     themeToggle.classList.add("theme-toggle-dark");
+    localStorage.setItem("favicon", "/img/favicon-dark.svg");
   } else {
     body.classList.remove("dark");
     themeToggle.classList.remove("theme-toggle-dark");
+    localStorage.setItem("favicon", "/img/favicon.svg");
   }
 }
 
@@ -69,7 +71,7 @@ if (savedTheme) {
   applyTheme(savedTheme);
 }
 
-const favicon = document.querySelector(".favicon");
+const favicon = document.querySelector("link[rel='icon']");
 
 themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");
@@ -78,8 +80,15 @@ themeToggle.addEventListener("click", () => {
   saveTheme(newTheme);
 
   if (body.classList.contains("dark")) {
-    favicon.href = "/img/favicon-dark.ico";
+    favicon.href = "/img/favicon-dark.svg";
   } else {
     favicon.href = "/img/favicon.svg";
     }
 });
+
+const savedFavicon = localStorage.getItem("favicon");
+if (savedFavicon) {
+  favicon.href = savedFavicon;
+}
+
+
