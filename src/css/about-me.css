@@ -15,6 +15,9 @@
 .picture-container {
   margin-bottom: 40px;
 }
+.about-me-img {
+  border-radius: 16px;
+}
 
 .bio-container {
   margin-bottom: 40px;
