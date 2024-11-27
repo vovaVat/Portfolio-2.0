@@ -404,3 +404,13 @@ a {
 .dark .together__form input:invalid {
   color: #e74a3b;
 }
+
+.footer-list a:focus,
+.footer-list a:hover {
+  color: #14c57c;
+}
+
+.dark .together__contacts-list a:focus,
+.dark .together__contacts-list a:hover {
+  color: #14c57c;
+}
