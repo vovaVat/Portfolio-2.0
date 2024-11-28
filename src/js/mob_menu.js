@@ -76,10 +76,4 @@ themeToggle.addEventListener("click", () => {
   themeToggle.classList.toggle("theme-toggle-dark");
   const newTheme = body.classList.contains("dark") ? "dark" : "light";
   saveTheme(newTheme);
-
-  if (newTheme === "dark") {
-    favicon.href = "./img/favicon-dark.svg";
-  } else {
-    favicon.href = "./img/favicon.svg";
-  }
 });
